@@ -1,0 +1,77 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "prisma:generate",
+      "type": "shell",
+      "command": "cd server; npx prisma generate",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "prisma:push",
+      "type": "shell",
+      "command": "cd server; npx prisma db push",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Postgres",
+      "type": "shell",
+      "command": "cd server; docker compose up postgres",
+      "group": "none",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "stop:postgres",
+      "type": "shell",
+      "command": "cd server; docker compose down",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "start:server",
+      "type": "shell",
+      "command": "cd server; npm run start:dev",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "start:client",
+      "type": "shell",
+      "command": "cd client; npm start",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "dev",
+      "dependsOn": ["start:postgres", "start:server", "start:client"],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    }
+  ]
+}
