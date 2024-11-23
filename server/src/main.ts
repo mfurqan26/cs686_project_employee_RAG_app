@@ -7,6 +7,7 @@ async function bootstrap() {
     origin: 'http://localhost:3001', // React app will run on 3001
     credentials: true,
   });
-  await app.listen(3000);
+  const apiPort = process.env.API_PORT || 3033;
+  await app.listen(apiPort);
 }
 bootstrap();

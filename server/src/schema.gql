@@ -1,0 +1,25 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Business {
+  createdAt: DateTime!
+  id: ID!
+  industry: String!
+  name: String!
+  updatedAt: DateTime!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Mutation {
+  createBusiness(industry: String!, name: String!): Business!
+}
+
+type Query {
+  business(id: String!): Business
+  businesses: [Business!]!
+}

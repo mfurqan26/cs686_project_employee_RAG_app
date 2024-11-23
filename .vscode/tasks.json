@@ -26,7 +26,7 @@
     {
       "label": "Postgres",
       "type": "shell",
-      "command": "cd server; docker compose up postgres",
+      "command": "cd server; docker compose -f docker-compose.db.yml up -d",
       "group": "none",
       "isBackground": true,
       "presentation": {
@@ -35,31 +35,25 @@
       "problemMatcher": []
     },
     {
-      "label": "stop:postgres",
-      "type": "shell",
-      "command": "cd server; docker compose down",
-      "options": {
-        "shell": {
-          "executable": "powershell.exe"
-        }
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "start:server",
+      "label": "Run Server",
       "type": "shell",
       "command": "cd server; npm run start:dev",
-      "options": {
-        "shell": {
-          "executable": "powershell.exe"
-        }
+      "group": "none",
+      "isBackground": true,
+      "presentation": {
+        "executable": "powershell.exe"
       },
       "problemMatcher": []
     },
     {
-      "label": "start:client",
+      "label": "Run Client",
       "type": "shell",
-      "command": "cd client; npm start",
+      "command": "cd client; $env:PORT=3001; npm run dev -- --port 3001",
+      "group": "none",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always"
+      },
       "options": {
         "shell": {
           "executable": "powershell.exe"
@@ -68,9 +62,11 @@
       "problemMatcher": []
     },
     {
-      "label": "dev",
-      "dependsOn": ["start:postgres", "start:server", "start:client"],
-      "dependsOrder": "sequence",
+      "label": "Run Dev Environment",
+      "dependsOn": ["Postgres", "Run Server", "Run Client"],
+      "presentation": {
+        "reveal": "always"
+      },
       "problemMatcher": []
     }
   ]
