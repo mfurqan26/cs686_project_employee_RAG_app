@@ -2,9 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "prisma:generate",
+      "label": "Prisma Generate & Push",
       "type": "shell",
-      "command": "cd server; npx prisma generate",
+      "command": "cd server; npx prisma generate; npx prisma db push",
       "options": {
         "shell": {
           "executable": "powershell.exe"
@@ -13,9 +13,37 @@
       "problemMatcher": []
     },
     {
-      "label": "prisma:push",
+      "label": "Watch API Queries",
       "type": "shell",
-      "command": "cd server; npx prisma db push",
+      "command": "Start-Sleep -Seconds 5; cd api-access; npx graphql-codegen --watch --config codegen.ts",
+      "group": "none",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": {
+        "owner": "typescript",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^(.*)\\(([0-9]+),([0-9]+)\\):\\s+(error|warning)\\s+(TS[0-9]+):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "code": 5,
+          "message": 6
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^.*Starting compilation.*",
+          "endsPattern": "^.*Compilation complete.*"
+        }
+      }
+    },
+    {
+      "label": "Prisma Migrate",
+      "type": "shell",
+      "command": "cd server; npx prisma migrate dev",
       "options": {
         "shell": {
           "executable": "powershell.exe"
@@ -41,9 +69,27 @@
       "group": "none",
       "isBackground": true,
       "presentation": {
-        "executable": "powershell.exe"
+        "reveal": "always",
+        "panel": "new"
       },
-      "problemMatcher": []
+      "problemMatcher": {
+        "owner": "typescript",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^(.*)\\(([0-9]+),([0-9]+)\\):\\s+(error|warning)\\s+(TS[0-9]+):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "code": 5,
+          "message": 6
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^.*Starting compilation.*",
+          "endsPattern": "^.*Compilation complete.*"
+        }
+      }
     },
     {
       "label": "Run Client",
@@ -62,8 +108,25 @@
       "problemMatcher": []
     },
     {
+      "label": "Prisma Studio",
+      "type": "shell",
+      "command": "cd server; . ./set-env.sh; npx prisma studio",
+      "group": "none",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "Run Dev Environment",
-      "dependsOn": ["Postgres", "Run Server", "Run Client"],
+      "dependsOn": [
+        "Postgres",
+        "Watch API Queries",
+        "Run Server",
+        "Run Client",
+        "Prisma Studio"
+      ],
       "presentation": {
         "reveal": "always"
       },

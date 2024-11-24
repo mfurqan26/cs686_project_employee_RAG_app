@@ -20,7 +20,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "api-access": ["../api-access/src"]
+    }
   },
-  "include": ["src"]
+  "include": ["src", "../api-access/src"]
 }

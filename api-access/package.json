@@ -1,0 +1,29 @@
+{
+  "name": "api-access",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "scripts": {
+    "codegen": "graphql-codegen",
+    "codegen:watch": "graphql-codegen --watch",
+    "watch": "nodemon --watch ../server/src --watch src --ext ts,graphql --delay 5 --exec npm run codegen"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.3",
+    "@graphql-codegen/typescript": "^4.1.2",
+    "@graphql-codegen/typescript-operations": "^4.4.0",
+    "@graphql-codegen/typescript-react-apollo": "^4.3.2",
+    "@parcel/watcher": "^2.5.0",
+    "@types/node": "^22.9.3",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.11.10",
+    "graphql": "^16.9.0"
+  }
+}
