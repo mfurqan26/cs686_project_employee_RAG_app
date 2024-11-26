@@ -1,0 +1,2064 @@
+code,name
+11,Agriculture
+21,Mining quarrying and oil and gas extraction
+22,Utilities
+23,Construction
+31,Manufacturing
+32,Manufacturing
+33,Manufacturing
+41,Wholesale trade
+44,Retail trade
+45,Retail trade
+48,Transportation and warehousing
+49,Transportation and warehousing
+51,Information and cultural industries
+52,Finance and insurance
+53,Real estate and rental and leasing
+54,Professional scientific and technical services
+55,Management of companies and enterprises
+56,Administrative and support waste management and remediation services
+61,Educational services
+62,Health care and social assistance
+71,Arts entertainment and recreation
+72,Accommodation and food services
+81,Other services (except public administration)
+91,Public administration
+111,Crop production
+112,Animal production and aquaculture
+113,Forestry and logging
+114,Fishing hunting and trapping
+115,Support activities for agriculture and forestry
+211,Oil and gas extraction
+212,Mining and quarrying (except oil and gas)
+213,Support activities for mining and oil and gas extraction
+221,UtilitiesUS
+236,Construction of buildings
+237,Heavy and civil engineering construction
+238,Specialty trade contractors
+311,Food manufacturing
+312,Beverage and tobacco product manufacturing
+313,Textile mills
+314,Textile product mills
+315,Apparel manufacturing
+316,Leather and allied product manufacturing
+321,Wood product manufacturing
+322,Paper manufacturing
+323,Printing and related support activities
+324,Petroleum and coal product manufacturing
+325,Chemical manufacturing
+326,Plastics and rubber products manufacturing
+327,Non-metallic mineral product manufacturing
+331,Primary metal manufacturing
+332,Fabricated metal product manufacturing
+333,Machinery manufacturing
+334,Computer and electronic product manufacturing
+335,Electrical equipment appliance and component manufacturing	
+336,Transportation equipment manufacturing
+337,Furniture and related product manufacturing
+339,Miscellaneous manufacturing
+411,Farm product merchant wholesalersCAN
+412,Petroleum petroleum products and other hydrocarbons merchant wholesalersCAN
+413,Food beverage and tobacco merchant wholesalersCAN
+414,Personal and household goods merchant wholesalersCAN
+415,Motor vehicle and motor vehicle parts and accessories merchant wholesalersCAN
+416,Building material and supplies merchant wholesalersCAN
+417,Machinery equipment and supplies merchant wholesalersCAN
+418,Miscellaneous merchant wholesalersCAN
+419,Business-to-business electronic markets and agents and brokersUS
+441,Motor vehicle and parts dealersUS
+444,Building material and garden equipment and supplies dealersUS
+445,Food and beverage retailersUS
+449,Furniture home furnishings electronics and appliances retailersUS
+455,General merchandise retailersUS
+456,Health and personal care retailersUS
+457,Gasoline stations and fuel vendorsUS
+458,Clothing clothing accessories	shoes jewelry luggage and leather goods retailersUS
+459,Sporting goods hobby musical instrument book and miscellaneous retailersUS
+481,Air transportation
+482,Rail transportation
+483,Water transportation
+484,Truck transportation
+485,Transit and ground passenger transportation
+486,Pipeline transportation
+487,Scenic and sightseeing transportation
+488,Support activities for transportation
+491,Postal service
+492,Couriers and messengers
+493,Warehousing and storage
+512,Motion picture and sound recording industries
+513,Publishing industries
+516,Broadcasting and content providers
+517,Telecommunications
+518,Computing infrastructure providers data processing web hosting and related services
+519,Web search portals libraries archives and all other information services
+521,Monetary authorities
+522,Credit intermediation and related activities
+523,Securities commodity contracts and other financial investment and related activities
+524,Insurance carriers and related activities
+526,Funds and other financial vehiclesCAN
+531,Real estate
+532,Rental and leasing services
+533,Lessors of non-financial intangible assets (except copyrighted works)
+541,Professional scientific and technical services
+551,Management of companies and enterprises
+561,Administrative and support services
+562,Waste management and remediation services
+611,Educational services
+621,Ambulatory health care services
+622,Hospitals
+623,Nursing and residential care facilities
+624,Social assistance
+711,Performing arts spectator sports and related industries
+712,Heritage institutions
+713,Amusement gambling and recreation industries
+721,Accommodation services
+722,Food services and drinking places
+811,Repair and maintenance
+812,Personal and laundry services
+813,Religious grant-making civic and professional and similar organizations
+814,Private households
+911,Federal government public administrationCAN
+912,Provincial and territorial public administrationCAN
+913,Local municipal and regional public administrationCAN
+914,Indigenous public administrationCAN
+919,International and other extra-territorial public administrationCAN
+1111,Oilseed and grain farming
+1112,Vegetable and melon farming
+1113,Fruit and tree nut farming
+1114,Greenhouse nursery and floriculture production
+1119,Other crop farming
+1121,Cattle ranching and farming
+1122,Hog and pig farming
+1123,Poultry and egg production
+1124,Sheep and goat farming
+1125,Aquaculture
+1129,Other animal production
+1131,Timber tract operations
+1132,Forest nurseries and gathering of forest products
+1133,Logging
+1141,Fishing
+1142,Hunting and trapping
+1151,Support activities for crop production
+1152,Support activities for animal production
+1153,Support activities for forestry
+2111,Oil and gas extraction
+2121,Coal mining
+2122,Metal ore mining
+2123,Non-metallic mineral mining and quarrying
+2131,Support activities for mining and oil and gas extraction
+2211,Electric power generation transmission and distribution
+2212,Natural gas distributionUS
+2213,Water sewage and other systemsUS
+2361,Residential building construction
+2362,Non-residential building construction
+2371,Utility system construction
+2372,Land subdivision
+2373,Highway street and bridge construction
+2379,Other heavy and civil engineering construction
+2381,Foundation structure and building exterior contractors	
+2382,Building equipment contractors
+2383,Building finishing contractors
+2389,Other specialty trade contractors
+3111,Animal food manufacturing
+3112,Grain and oilseed milling
+3113,Sugar and confectionery product manufacturing
+3114,Fruit and vegetable preserving and specialty food manufacturing
+3115,Dairy product manufacturing
+3116,Meat product manufacturing
+3117,Seafood product preparation and packaging
+3118,Bakeries and tortilla manufacturing
+3119,Other food manufacturing
+3121,Beverage manufacturing
+3122,Tobacco manufacturing
+3123,Cannabis product manufacturing
+3131,Fibre yarn and thread mills
+3132,Fabric mills
+3133,Textile and fabric finishing and fabric coating
+3141,Textile furnishings mills
+3149,Other textile product mills
+3151,Apparel knitting mills
+3152,Cut and sew clothing manufacturing
+3159,Clothing accessories and other clothing manufacturing
+3161,Leather and hide tanning and finishing
+3162,Footwear manufacturing
+3169,Other leather and allied product manufacturing
+3211,Sawmills and wood preservation
+3212,Veneer plywood and engineered wood product manufacturing
+3219,Other wood product manufacturing
+3221,Pulp paper and paperboard mills
+3222,Converted paper product manufacturing
+3231,Printing and related support activities
+3241,Petroleum and coal product manufacturing
+3251,Basic chemical manufacturing
+3252,Resin synthetic rubber and artificial and synthetic fibres and filaments manufacturing
+3253,Pesticide fertilizer and other agricultural chemical manufacturing
+3254,Pharmaceutical and medicine manufacturing
+3255,Paint coating and adhesive manufacturing
+3256,Soap cleaning compound and toilet preparation manufacturing
+3259,Other chemical product manufacturing
+3261,Plastic product manufacturing
+3262,Rubber product manufacturing
+3271,Clay product and refractory manufacturing
+3272,Glass and glass product manufacturing
+3273,Cement and concrete product manufacturing
+3274,Lime and gypsum product manufacturing
+3279,Other non-metallic mineral product manufacturing
+3311,Iron and steel mills and ferro-alloy manufacturing
+3312,Steel product manufacturing from purchased steel
+3313,Alumina and aluminum production and processing
+3314,Non-ferrous metal (except aluminum) production and processing
+3315,Foundries
+3321,Forging and stamping
+3322,Cutlery and hand tool manufacturing
+3323,Architectural and structural metals manufacturing
+3324,Boiler tank and shipping container manufacturing
+3325,Hardware manufacturing
+3326,Spring and wire product manufacturing
+3327,Machine shops turned product and screw nut and bolt manufacturing
+3328,Coating engraving cold and heat treating and allied activities
+3329,Other fabricated metal product manufacturing
+3331,Agricultural construction and mining machinery manufacturing
+3332,Industrial machinery manufacturing
+3333,Commercial and service industry machinery manufacturing
+3334,Ventilation heating air-conditioning and commercial refrigeration equipment manufacturing
+3335,Metalworking machinery manufacturing
+3336,Engine turbine and power transmission equipment manufacturing
+3339,Other general-purpose machinery manufacturing
+3341,Computer and peripheral equipment manufacturing
+3342,Communications equipment manufacturing
+3343,Audio and video equipment manufacturing
+3344,Semiconductor and other electronic component manufacturing
+3345,Navigational measuring medical and control instruments manufacturing
+3346,Manufacturing and reproducing magnetic and optical media
+3351,Electric lighting equipment manufacturing
+3352,Household appliance manufacturing
+3353,Electrical equipment manufacturing
+3359,Other electrical equipment and component manufacturing
+3361,Motor vehicle manufacturing
+3362,Motor vehicle body and trailer manufacturing
+3363,Motor vehicle parts manufacturing
+3364,Aerospace product and parts manufacturing
+3365,Railroad rolling stock manufacturing
+3366,Ship and boat building
+3369,Other transportation equipment manufacturing
+3371,Household and institutional furniture and kitchen cabinet manufacturing
+3372,Office furniture (including fixtures) manufacturing
+3379,Other furniture-related product manufacturing
+3391,Medical equipment and supplies manufacturing
+3399,Other miscellaneous manufacturing
+4111,Farm product merchant wholesalersCAN
+4121,Petroleum petroleum products and other hydrocarbons merchant wholesalersCAN
+4131,Food merchant wholesalersCAN
+4132,Beverage merchant wholesalersCAN
+4133,Cigarette and tobacco product merchant wholesalersCAN
+4134,Cannabis merchant wholesalers
+4141,Textile clothing and footwear merchant wholesalersCAN
+4142,Home entertainment equipment and household appliance merchant wholesalersCAN
+4143,Home furnishings merchant wholesalersCAN
+4144,Personal goods merchant wholesalersCAN
+4145,Pharmaceuticals toiletries cosmetics and sundries merchant wholesalersCAN
+4151,Motor vehicle merchant wholesalersCAN
+4152,New motor vehicle parts and accessories merchant wholesalersCAN
+4153,Used motor vehicle parts and accessories merchant wholesalersCAN
+4161,Electrical plumbing heating and air-conditioning equipment and supplies merchant wholesalersCAN
+4162,Metal service centresCAN
+4163,Lumber millwork hardware and other building supplies merchant wholesalersCAN
+4171,Farm lawn and garden machinery and equipment merchant wholesalersCAN
+4172,Construction forestry mining and industrial machinery equipment and supplies merchant wholesalersCAN
+4173,Computer and communications equipment and supplies merchant wholesalersCAN
+4179,Other machinery equipment and supplies merchant wholesalersCAN
+4181,Recyclable material merchant wholesalersCAN
+4182,Paper paper product and disposable plastic product merchant wholesalersCAN
+4183,Agricultural supplies merchant wholesalersCAN
+4184,Chemical (except agricultural) and allied product merchant wholesalersCAN
+4185,Mineral ore and precious metal merchant wholesalersCAN
+4186,Log wood chips and other wood products merchant wholesalersCAN
+4189,Other miscellaneous merchant wholesalersCAN
+4191,Business-to-business electronic markets and agents and brokersUS
+4411,Automobile dealersUS
+4412,Other motor vehicle dealersUS
+4413,Automotive parts accessories and tire retailersUS
+4441,Building material and supplies dealersUS
+4442,Lawn and garden equipment and supplies retailersUS
+4451,Grocery and convenience retailersUS
+4452,Specialty food retailersUS
+4453,Beer wine and liquor retailersUS
+4491,Furniture floor covering window treatment and other home furnishings retailersUS
+4492,Electronics and appliances retailersUS
+4551,Department storesUS
+4552,Warehouse clubs Supercentres and other general merchandise retailersUS
+4561,Health and personal care retailersUS
+4571,Gasoline stationsUS
+4572,Fuel dealersUS
+4581,Clothing and clothing accessories retailersUS
+4582,Shoe retailersUS
+4583,Jewellery luggage and leather goods retailersUS
+4591,Sporting goods hobby and musical instrument retailersUS
+4592,Book retailers and news dealersUS
+4593,FloristsUS
+4594,Office supplies stationery and gift retailersUS
+4595,Used merchandise retailersUS
+4599,Other miscellaneous store retailersUS
+4811,Scheduled air transportation
+4812,Non-scheduled air transportation
+4821,Rail transportation
+4831,Deep sea coastal and Great Lakes water transportation
+4832,Inland water transportation
+4841,General freight trucking
+4842,Specialized freight trucking
+4851,Urban transit systems
+4852,Interurban and rural bus transportation
+4853,Taxi and limousine service
+4854,School and employee bus transportation
+4855,Charter bus industry
+4859,Other transit and ground passenger transportation
+4861,Pipeline transportation of crude oil
+4862,Pipeline transportation of natural gas
+4869,Other pipeline transportation
+4871,Scenic and sightseeing transportation land
+4872,Scenic and sightseeing transportation water
+4879,Scenic and sightseeing transportation other
+4881,Support activities for air transportation
+4882,Support activities for rail transportation
+4883,Support activities for water transportation
+4884,Support activities for road transportation
+4885,Freight transportation arrangement
+4889,Other support activities for transportation
+4911,Postal service
+4921,Couriers
+4922,Local messengers and local delivery
+4931,Warehousing and storage
+5121,Motion picture and video industries
+5122,Sound recording industries
+5131,Newspaper periodical book and directory publishers
+5132,Software publishers
+5161,Radio and television broadcasting stations
+5162,Media streaming distribution services and other media networks and content providers
+5173,Wired and wireless telecommunications carriers(except satellite)CAN
+5174,Satellite telecommunications
+5179,Other telecommunicationsCAN
+5182,Computing infrastructure providers data processing web hosting and related services
+5192,Web search portals libraries and archives and all other information services
+5211,Monetary authorities
+5221,Depository credit intermediationUS
+5222,Non-depository credit intermediationUS
+5223,Activities related to credit intermediationUS
+5231,Securities and commodity contracts intermediation and brokerage
+5232,Securities and commodity exchanges
+5239,Other financial investment activities
+5241,Insurance carriers
+5242,Agencies brokerages and other insurance related activities
+5261,Pension fundsCAN
+5269,Other funds and financial vehiclesCAN
+5311,Lessors of real estate
+5312,Offices of real estate agents and brokers
+5313,Activities related to real estate
+5321,Automotive equipment rental and leasing
+5322,Consumer goods rental
+5323,General rental centres
+5324,Commercial and industrial machinery and equipment rental and leasing
+5331,Lessors of non-financial intangible assets (except copyrighted works)
+5411,Legal services
+5412,Accounting tax preparation bookkeeping and payroll services
+5413,Architectural engineering and related services
+5414,Specialized design services
+5415,Computer systems design and related services
+5416,Management scientific and technical consulting services
+5417,Scientific research and development services
+5418,Advertising public relations and related services
+5419,Other professional scientific and technical services
+5511,Management of companies and enterprises
+5611,Office administrative services
+5612,Facilities support services
+5613,Employment services
+5614,Business support services
+5615,Travel arrangement and reservation services
+5616,Investigation and security services
+5617,Services to buildings and dwellings
+5619,Other support services
+5621,Waste collectionUS
+5622,Waste treatment and disposalUS
+5629,Remediation and other waste management servicesUS
+6111,Elementary and secondary schools
+6112,Community colleges and C.E.G.E.P.s
+6113,Universities
+6114,Business schools and computer and management training
+6115,Technical and trade schools
+6116,Other schools and instruction
+6117,Educational support services
+6211,Offices of physicians
+6212,Offices of dentists
+6213,Offices of other health practitioners
+6214,Out-patient care centres
+6215,Medical and diagnostic laboratories
+6216,Home health care services
+6219,Other ambulatory health care services
+6221,General medical and surgical hospitals
+6222,Psychiatric and substance use hospitals
+6223,Specialty hospitals (except psychiatric and substance use)
+6231,Nursing care facilities
+6232,Residential facilities for persons with an intellectual or developmental disability a mental health or substance use condition
+6233,Community care facilities for the elderly
+6239,Other residential care facilities
+6241,Individual and family services
+6242,Community food and housing and emergency and other relief services
+6243,Vocational rehabilitation services
+6244,Child day-care services
+7111,Performing arts companies
+7112,Spectator sports
+7113,Promoters (presenters) of performing arts sports and similar events
+7114,Agents and managers for artists athletes entertainers and other public figures
+7115,Independent artists writers and performers
+7121,Heritage institutions
+7131,Amusement parks and arcades
+7132,Gambling industries
+7139,Other amusement and recreation industries
+7211,Traveller accommodation
+7212,Recreational vehicle (RV) parks and recreational camps
+7213,Rooming and boarding houses
+7223,Special food services
+7224,Drinking places (alcoholic beverages)
+7225,Full-service restaurants and limited-service eating places
+8111,Automotive repair and maintenance
+8112,Electronic and precision equipment repair and maintenance
+8113,Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance
+8114,Personal and household goods repair and maintenance
+8121,Personal care servicesUS
+8122,Funeral servicesUS
+8123,Dry cleaning and laundry servicesUS
+8129,Other personal servicesUS
+8131,Religious organizationsUS
+8132,Grant-making and giving servicesUS
+8133,Social advocacy organizationsUS
+8134,Civic and social organizationsUS
+8139,Business professional labour and other membership organizationsUS
+8141,Private households
+9111,Defence servicesCAN
+9112,Federal protective servicesCAN
+9113,Federal labour employment and immigration servicesCAN
+9114,Foreign affairs and international assistanceCAN
+9119,Other federal government public administrationCAN
+9121,Provincial protective servicesCAN
+9122,Provincial labour and employment servicesCAN
+9129,Other provincial and territorial public administrationCAN
+9131,Municipal protective servicesCAN
+9139,Other local municipal and regional public administrationCAN
+9141,Indigenous public administrationCAN
+9191,International and other extra-territorial public administrationCAN
+11111,Soybean farming
+11112,Oilseed (except soybean) farming
+11113,Dry pea and bean farming
+11114,Wheat farming
+11115,Corn farming
+11116,Rice farming
+11119,Other grain farming
+11121,Vegetable and melon farming
+11131,Orange groves
+11132,Citrus (except orange) groves
+11133,Non-citrus fruit and tree nut farming
+11141,Food crops grown under cover
+11142,Nursery and floriculture production
+11191,Tobacco farming
+11192,Cotton farming
+11193,Sugar cane farming
+11194,Hay farming
+11199,All other crop farming
+11211,Beef cattle ranching and farming including feedlots
+11212,Dairy cattle and milk production
+11221,Hog and pig farming
+11231,Chicken egg production
+11232,Broiler and other meat-type chicken production
+11233,Turkey production
+11234,Poultry hatcheries
+11239,Other poultry production
+11241,Sheep farming
+11242,Goat farming
+11251,Aquaculture
+11291,Apiculture
+11292,Horse and other equine production
+11293,Fur-bearing animal and rabbit production
+11299,All other animal production
+11311,Timber tract operations
+11321,Forest nurseries and gathering of forest products
+11331,Logging
+11411,Fishing
+11421,Hunting and trapping
+11511,Support activities for crop production
+11521,Support activities for animal production
+11531,Support activities for forestry
+21111,Oil and gas extraction (except oil sands)CAN
+21114,Oil sands extractionCAN
+21211,Coal mining
+21221,Iron ore mining
+21222,Gold and silver ore mining
+21223,Copper nickel	lead and zinc ore mining
+21229,Other metal ore mining
+21231,Stone mining and quarrying
+21232,Sand gravel clay and ceramic and refractory minerals mining and quarrying			
+21239,Other non-metallic mineral mining and quarrying
+21311,Support activities for mining and oil and gas extraction
+22111,Electric power generationUS
+22112,Electric power transmission control and distributionUS
+22121,Natural gas distributionUS
+22131,Water supply and irrigation systemsUS
+22132,Sewage treatment facilitiesUS
+22133,Steam and air-conditioning supplyUS
+23611,Residential building construction
+23621,Industrial building and structure construction
+23622,Commercial and institutional building construction
+23711,Water and sewer line and related structures construction
+23712,Oil and gas pipeline and related structures construction
+23713,Power and communication line and related structures construction
+23721,Land subdivision
+23731,Highway street and bridge construction
+23799,Other heavy and civil engineering construction
+23811,Poured concrete foundation and structure contractors
+23812,Structural steel and precast concrete contractors
+23813,Framing contractorsUS
+23814,Masonry contractorsUS
+23815,Glass and glazing contractorsUS
+23816,Roofing contractorsUS
+23817,Siding contractorsUS
+23819,Other foundation structure and building exterior contractorsUS
+23821,Electrical contractors and other wiring installation contractors
+23822,Plumbing heating and air-conditioning contractors
+23829,Other building equipment contractors
+23831,Drywall and insulation contractors
+23832,Painting and wall covering contractors
+23833,Flooring contractors
+23834,Tile and terrazzo contractors
+23835,Finish carpentry contractors
+23839,Other building finishing contractors
+23891,Site preparation contractors
+23899,All other specialty trade contractors
+31111,Animal food manufacturing
+31121,Flour milling and malt manufacturing
+31122,Starch and vegetable fat and oil manufacturing
+31123,Breakfast cereal manufacturing
+31131,Sugar manufacturing
+31134,Non-chocolate confectionery manufacturing
+31135,Chocolate and chocolate confectionery manufacturing
+31141,Frozen food manufacturing
+31142,Fruit and vegetable canning pickling and drying
+31151,Dairy product (except frozen) manufacturing
+31152,Ice cream and frozen dessert manufacturing
+31161,Animal slaughtering and processing
+31171,Seafood product preparation and packaging
+31181,Bread and bakery product manufacturing
+31182,Cookie cracker and pasta manufacturing
+31183,Tortilla manufacturing
+31191,Snack food manufacturing
+31192,Coffee and tea manufacturing
+31193,Flavouring syrup and concentrate manufacturing
+31194,Seasoning and dressing manufacturing
+31199,All other food manufacturing
+31211,Soft drink and ice manufacturing
+31212,Breweries
+31213,Wineries
+31214,Distilleries
+31221,Tobacco stemming and redrying
+31222,Tobacco product manufacturing
+31231,Cannabis product manufacturing
+31311,Fibre yarn and thread mills
+31321,Broad-woven fabric mills
+31322,Narrow fabric mills and schiffli machine embroidery
+31323,Nonwoven fabric mills
+31324,Knit fabric mills
+31331,Textile and fabric finishing
+31332,Fabric coating
+31411,Carpet and rug mills
+31412,Curtain and linen mills
+31491,Textile bag and canvas mills
+31499,All other textile product mills
+31512,Apparel knitting mills
+31521,Cut and sew clothing contractingUS
+31525,Cut and sew apparel manufacturing (except contractors)
+31599,Clothing accessories and other clothing manufacturing
+31611,Leather and hide tanning and finishing
+31621,Footwear manufacturing
+31699,Other leather and allied product manufacturing
+32111,Sawmills and wood preservation
+32121,Veneer plywood and engineered wood product manufacturing
+32191,Millwork
+32192,Wood container and pallet manufacturing
+32199,All other wood product manufacturing
+32211,Pulp mills
+32212,Paper mills
+32213,Paperboard mills
+32221,Paperboard container manufacturing
+32222,Paper bag and coated and treated paper manufacturing
+32223,Stationery product manufacturing
+32229,Other converted paper product manufacturing
+32311,Printing
+32312,Support activities for printing
+32411,Petroleum refineries
+32412,Asphalt paving roofing and saturated materials manufacturing
+32419,Other petroleum and coal product manufacturing
+32511,Petrochemical manufacturing
+32512,Industrial gas manufacturing
+32513,Synthetic dye and pigment manufacturing
+32518,Other basic inorganic chemical manufacturing
+32519,Other basic organic chemical manufacturing
+32521,Resin and synthetic rubber manufacturing
+32522,Artificial and synthetic fibres and filaments manufacturing
+32531,Fertilizer manufacturing
+32532,Pesticide and other agricultural chemical manufacturing
+32541,Pharmaceutical and medicine manufacturing
+32551,Paint and coating manufacturing
+32552,Adhesive manufacturing
+32561,Soap and cleaning compound manufacturing
+32562,Toilet preparation manufacturing
+32591,Printing ink manufacturing
+32592,Explosives manufacturing
+32599,All other chemical product manufacturing
+32611,Plastic packaging materials and unlaminated film and sheet manufacturing
+32612,Plastic pipe pipe fitting and unlaminated profile shape manufacturing
+32613,Laminated plastic plate sheet (except packaging) and shape manufacturing
+32614,Polystyrene foam product manufacturing
+32615,Urethane and other foam product (except polystyrene) manufacturing
+32616,Plastic bottle manufacturing
+32619,Other plastic product manufacturing
+32621,Tire manufacturing
+32622,Rubber and plastic hose and belting manufacturing
+32629,Other rubber product manufacturing
+32711,Pottery ceramics and plumbing fixture manufacturing
+32712,Clay building material and refractory manufacturing
+32721,Glass and glass product manufacturing
+32731,Cement manufacturing
+32732,Ready-mix concrete manufacturing
+32733,Concrete pipe brick and block manufacturing
+32739,Other concrete product manufacturing
+32741,Lime manufacturing
+32742,Gypsum product manufacturing
+32791,Abrasive product manufacturing
+32799,All other non-metallic mineral product manufacturing
+33111,Iron and steel mills and ferro-alloy manufacturing
+33121,Iron and steel pipes and tubes manufacturing from purchased steel
+33122,Rolling and drawing of purchased steel
+33131,Alumina and aluminum production and processing
+33141,Non-ferrous metal (except aluminum) smelting and refining
+33142,Copper rolling drawing extruding and alloying
+33149,Non-ferrous metal (except copper and aluminum) rolling drawing	extruding and alloying
+33151,Ferrous metal foundries
+33152,Non-ferrous metal foundries
+33211,Forging and stamping
+33221,Cutlery and hand tool manufacturing
+33231,Plate work and fabricated structural product manufacturing
+33232,Ornamental and architectural metal product manufacturing
+33241,Power boiler and heat exchanger manufacturing
+33242,Metal tank (heavy gauge) manufacturing
+33243,Metal can box and other metal container (light gauge) manufacturing
+33251,Hardware manufacturing
+33261,Spring and wire product manufacturing
+33271,Machine shops
+33272,Turned product and screw nut and bolt manufacturing
+33281,Coating engraving cold and heat treating and allied activities
+33291,Metal valve manufacturing
+33299,All other fabricated metal product manufacturing
+33311,Agricultural implement manufacturing
+33312,Construction machinery manufacturing
+33313,Mining and oil and gas field machinery manufacturing
+33324,Industrial machinery manufacturing
+33331,Commercial and service industry machinery manufacturing
+33341,Ventilation heating air-conditioning and commercial refrigeration equipment manufacturing
+33351,Metalworking machinery manufacturing
+33361,Engine turbine and power transmission equipment manufacturing
+33391,Pump and compressor manufacturing
+33392,Material handling equipment manufacturing
+33399,All other general-purpose machinery manufacturing
+33411,Computer and peripheral equipment manufacturing
+33421,Telephone apparatus manufacturing
+33422,Radio and television broadcasting and wireless communications equipment manufacturing
+33429,Other communications equipment manufacturing
+33431,Audio and video equipment manufacturing
+33441,Semiconductor and other electronic component manufacturing
+33451,Navigational measuring medical and control instruments manufacturing
+33461,Manufacturing and reproducing magnetic and optical media
+33513,Electric lighting equipment manufacturing
+33521,Small electrical appliance manufacturing
+33522,Major appliance manufacturing
+33531,Electrical equipment manufacturing
+33591,Battery manufacturing
+33592,Communication and energy wire and cable manufacturing
+33593,Wiring device manufacturing
+33599,All other electrical equipment and component manufacturing
+33611,Automobile and light-duty motor vehicle manufacturing
+33612,Heavy-duty truck manufacturing
+33621,Motor vehicle body and trailer manufacturing
+33631,Motor vehicle gasoline engine and engine parts manufacturing
+33632,Motor vehicle electrical and electronic equipment manufacturing
+33633,Motor vehicle steering and suspension components (except spring) manufacturing
+33634,Motor vehicle brake system manufacturing
+33635,Motor vehicle transmission and power train parts manufacturing
+33636,Motor vehicle seating and interior trim manufacturing
+33637,Motor vehicle metal stamping
+33639,Other motor vehicle parts manufacturing
+33641,Aerospace product and parts manufacturing
+33651,Railroad rolling stock manufacturing
+33661,Ship and boat building
+33699,Other transportation equipment manufacturing
+33711,Wood kitchen cabinet and counter top manufacturing
+33712,Household and institutional furniture manufacturing
+33721,Office furniture (including fixtures) manufacturing
+33791,Mattress manufacturing
+33792,Blind and shade manufacturing
+33911,Medical equipment and supplies manufacturing
+33991,Jewellery and silverware manufacturing
+33992,Sporting and athletic goods manufacturing
+33993,Doll toy and game manufacturing
+33994,Office supplies (except paper) manufacturing
+33995,Sign manufacturing
+33999,All other miscellaneous manufacturing
+41111,Live animal merchant wholesalersCAN
+41112,Oilseed and grain merchant wholesalersCAN
+41113,Nursery stock and plant merchant wholesalersCAN
+41119,Other farm product merchant wholesalersCAN
+41211,Petroleum petroleum products and other hydrocarbons merchant wholesalersCAN
+41311,General-line food merchant wholesalersCAN
+41312,Dairy and milk products merchant wholesalersCAN
+41313,Poultry and egg merchant wholesalersCAN
+41314,Fish and seafood product merchant wholesalersCAN
+41315,Fresh fruit and vegetable merchant wholesalersCAN
+41316,Red meat and meat product merchant wholesalersCAN
+41319,Other specialty-line food merchant wholesalersCAN
+41321,Non-alcoholic beverage merchant wholesalersCAN
+41322,Alcoholic beverage merchant wholesalersCAN
+41331,Cigarette and tobacco product merchant wholesalersCAN
+41341,Cannabis merchant wholesalers
+41411,Clothing and clothing accessories merchant wholesalersCAN
+41412,Footwear merchant wholesalersCAN
+41413,Piece goods notions and other dry goods merchant wholesalersCAN
+41421,Home entertainment equipment merchant wholesalersCAN
+41422,Household appliance merchant wholesalersCAN
+41431,China glassware crockery and pottery merchant wholesalersCAN
+41432,Floor covering merchant wholesalersCAN
+41433,Linen drapery and other textile furnishings merchant wholesalersCAN	
+41439,Other home furnishings merchant wholesalersCAN
+41441,Jewellery and watch merchant wholesalersCAN
+41442,Book periodical and newspaper merchant wholesalersCAN
+41443,Photographic equipment and supplies merchant wholesalersCAN
+41444,Sound recording merchant wholesalersCAN
+41445,Video recording merchant wholesalersCAN
+41446,Toy and hobby goods merchant wholesalersCAN
+41447,Amusement and sporting goods merchant wholesalersCAN
+41451,Pharmaceuticals and pharmacy supplies merchant wholesalersCAN
+41452,Toiletries cosmetics and sundries merchant wholesalersCAN
+41511,New and used automobile and light-duty truck merchant wholesalersCAN
+41512,Truck truck tractor and bus merchant wholesalersCAN
+41519,Recreational and other motor vehicles merchant wholesalersCAN
+41521,Tire merchant wholesalersCAN
+41529,Other new motor vehicle parts and accessories merchant wholesalersCAN
+41531,Used motor vehicle parts and accessories merchant wholesalersCAN
+41611,Electrical wiring and construction supplies merchant wholesalersCAN
+41612,Plumbing heating and air-conditioning equipment and supplies merchant wholesalersCAN
+41621,Metal service centresCAN
+41631,General-line building supplies merchant wholesalersCAN
+41632,Lumber plywood and millwork merchant wholesalersCAN
+41633,Hardware merchant wholesalersCAN
+41634,Paint glass and wallpaper merchant wholesalersCAN
+41639,Other specialty-line building supplies merchant wholesalersCAN
+41711,Farm lawn and garden machinery and equipment merchant wholesalersCAN
+41721,Construction and forestry machinery equipment and supplies merchant wholesalersCAN
+41722,Mining and oil and gas well machinery equipment and supplies merchant wholesalersCAN
+41723,Industrial machinery equipment and supplies merchant wholesalersCAN
+41731,Computer computer peripheral and pre-packaged software merchant wholesalersCAN	
+41732,Electronic components navigational and communications equipment and supplies merchant wholesalersCAN
+41791,Office and store machinery and equipment merchant wholesalersCAN
+41792,Service establishment machinery equipment and supplies merchant wholesalersCAN
+41793,Professional machinery equipment and supplies merchant wholesalersCAN
+41799,All other machinery equipment and supplies merchant wholesalersCAN
+41811,Recyclable metal merchant wholesalersCAN
+41812,Recyclable paper and paperboard merchant wholesalersCAN
+41819,Other recyclable material merchant wholesalersCAN
+41821,Stationery and office supplies merchant wholesalersCAN
+41822,Other paper and disposable plastic product merchant wholesalersCAN
+41831,Agricultural feed merchant wholesalersCAN
+41832,Seed merchant wholesalersCAN
+41839,Agricultural chemical and other farm supplies merchant wholesalersCAN
+41841,Chemical (except agricultural) and allied product merchant wholesalersCAN
+41851,Mineral ore and precious metal merchant wholesalersCAN
+41861,Log wood chips and other wood products merchant wholesalersCAN
+41893,Second-hand goods (except machinery and automotive) merchant wholesalersCAN
+41899,All other merchant wholesalersCAN
+41911,Business-to-business electronic marketsUS
+41912,Wholesale trade agents and brokersUS
+44111,New car dealersUS
+44112,Used car dealersUS
+44121,Recreational vehicle dealersUS
+44122,Motorcycle boat and other motor vehicle dealersUS
+44133,Automotive parts and accessories retailersUS
+44134,Tire dealersUS
+44411,Home centresUS
+44412,Paint and wallpaper retailersUS
+44414,Hardware retailersUS
+44418,Other building material dealersUS
+44423,Outdoor power equipment retailersUS
+44424,Nursery retailers and garden centresUS
+44511,Supermarkets and other grocery retailers (except Convenience retailers)US
+44513,Convenience retailers and vending machine operatorsUS
+44523,Fruit and vegetable marketsUS
+44524,Meat marketsUS
+44525,Fish and seafood marketsUS
+44529,Other specialty food retailersUS
+44532,Beer wine and liquor retailersUS
+44911,Furniture retailersUS
+44912,Floor covering window treatment and other home furnishing retailersUS
+44921,Electronics and appliances retailersUS
+45511,Department storesUS
+45521,Warehouse clubs Supercentres and other general merchandise retailersUS
+45611,Pharmacies and drug storesUS
+45612,Cosmetics beauty supplies and perfume retailersUS	
+45613,Optical goods retailersUS
+45619,Other health and personal care retailersUS
+45711,Gasoline stations with convenience storesUS
+45712,Other gasoline stationsUS
+45721,Fuel dealersUS
+45811,Clothing and clothing accessories retailersUS
+45821,Shoe retailersUS
+45831,Jewellery retailersUS
+45832,Luggage and leather goods retailersUS
+45911,Sporting goods retailersUS
+45912,Hobby toy and game retailersUS
+45913,Sewing needlework and piece goods retailersUS
+45914,Musical instrument and supplies retailersUS
+45921,Book retailers and news dealersUS
+45931,FloristsUS
+45941,Office supplies and stationery retailersUS
+45942,Gift novelty and souvenir retailersUS
+45951,Used merchandise retailersUS
+45991,Pet and pet supplies retailersUS
+45992,Art dealersUS
+45993,Manufactured (mobile) home dealersUS
+45999,All other miscellaneous retailersUS
+48111,Scheduled air transportation
+48121,Non-scheduled air transportation
+48211,Rail transportation
+48311,Deep sea coastal and Great Lakes water transportation
+48321,Inland water transportation
+48411,General freight trucking local
+48412,General freight trucking long distance
+48421,Used household and office goods moving
+48422,Specialized freight (except used goods) trucking local
+48423,Specialized freight (except used goods) trucking long distance
+48511,Urban transit systems
+48521,Interurban and rural bus transportation
+48531,Taxi service
+48532,Limousine service
+48541,School and employee bus transportation
+48551,Charter bus industry
+48599,Other transit and ground passenger transportation
+48611,Pipeline transportation of crude oil
+48621,Pipeline transportation of natural gas
+48691,Pipeline transportation of refined petroleum products
+48699,All other pipeline transportation
+48711,Scenic and sightseeing transportation land
+48721,Scenic and sightseeing transportation water
+48799,Scenic and sightseeing transportation other
+48811,Airport operations
+48819,Other support activities for air transportation
+48821,Support activities for rail transportation
+48831,Port and harbour operations
+48832,Marine cargo handling
+48833,Navigational services to shipping
+48839,Other support activities for water transportation
+48841,Motor vehicle towing
+48849,Other support activities for road transportation
+48851,Freight transportation arrangement
+48899,Other support activities for transportation
+49111,Postal service
+49211,Couriers
+49221,Local messengers and local delivery
+49311,General warehousing and storage
+49312,Refrigerated warehousing and storage
+49313,Farm product warehousing and storage
+49319,Other warehousing and storage
+51211,Motion picture and video production
+51212,Motion picture and video distribution
+51213,Motion picture and video exhibition
+51219,Post-production and other motion picture and video industries
+51223,Music publishers
+51224,Sound recording studios
+51225,Record production and distribution
+51229,Other sound recording industries
+51311,Newspaper publishers
+51312,Periodical publishers
+51313,Book publishers
+51314,Directory and mailing list publishers
+51319,Other publishers
+51321,Software publishers
+51611,Radio broadcasting stations
+51612,Television broadcasting stations
+51621,Media streaming distribution services and other media networks and content providers
+51731,Wired and wireless telecommunications carriers (except satellite)CAN
+51741,Satellite telecommunications
+51791,Other telecommunicationsCAN
+51821,Computing infrastructure providers data processing web hosting and related services
+51921,Libraries and archives
+51929,Web search portals and all other information services
+52111,Monetary authorities
+52211,BankingCAN
+52213,Credit unionsUS
+52219,Other depository credit intermediationUS
+52221,Credit card issuingUS
+52222,Sales financingUS
+52229,Other non-depository credit intermediationUS
+52231,Mortgage and non-mortgage loan brokersUS
+52232,Financial transactions processing reserve and clearing house activitiesUS
+52239,Other activities related to credit intermediationUS
+52311,Investment banking and securities dealingUS
+52312,Securities brokerageUS
+52313,Commodity contracts dealingUS
+52314,Commodity contracts brokerageUS
+52321,Securities and commodity exchanges
+52391,Miscellaneous intermediationUS
+52392,Portfolio managementUS
+52393,Investment adviceUS
+52399,All other financial investment activitiesUS
+52411,Direct life health and medical insurance carriersUS
+52412,Direct insurance (except life health and medical) carriersUS
+52413,Reinsurance carriersUS
+52421,Insurance agencies and brokeragesUS
+52429,Other insurance related activitiesUS
+52611,Pension fundsCAN
+52691,Open-end investment fundsCAN
+52693,Segregated (except pension) fundsCAN
+52698,All other funds and financial vehiclesCAN
+53111,Lessors of residential buildings and dwellingsUS
+53112,Lessors of non-residential buildings (except mini-warehouses)US
+53113,Self-storage mini-warehousesUS
+53119,Lessors of other real estate propertyUS
+53121,Offices of real estate agents and brokers
+53131,Real estate property managersUS
+53132,Offices of real estate appraisersUS
+53139,Other activities related to real estateUS
+53211,Passenger car rental and leasing
+53212,Truck utility trailer and recreational vehicle (RV) rental and leasing
+53221,Consumer electronics and appliance rental
+53228,All other consumer goods rental
+53231,General rental centres
+53241,Construction transportation mining	and forestry machinery and equipment rental and leasing
+53242,Office machinery and equipment rental and leasing
+53249,Other commercial and industrial machinery and equipment rental and leasing
+53311,Lessors of non-financial intangible assets (except copyrighted works)
+54111,Offices of lawyers
+54112,Offices of notaries
+54119,Other legal services
+54121,Accounting tax preparation bookkeeping and payroll services
+54131,Architectural services
+54132,Landscape architectural services
+54133,Engineering services
+54134,Drafting services
+54135,Building inspection services
+54136,Geophysical surveying and mapping services
+54137,Surveying and mapping (except geophysical) services
+54138,Testing laboratories
+54141,Interior design services
+54142,Industrial design services
+54143,Graphic design services
+54149,Other specialized design services
+54151,Computer systems design and related services
+54161,Management consulting services
+54162,Environmental consulting services
+54169,Other scientific and technical consulting services
+54171,Research and development in the physical engineering and life sciences
+54172,Research and development in the social sciences and humanities
+54181,Advertising agencies
+54182,Public relations services
+54183,Media buying agencies
+54184,Media representatives
+54185,Display advertising
+54186,Direct mail advertising
+54187,Advertising material distribution services
+54189,Other services related to advertising
+54191,Marketing research and public opinion polling
+54192,Photographic services
+54193,Translation and interpretation services
+54194,Veterinary services
+54199,All other professional scientific and technical services
+55111,Management of companies and enterprises
+56111,Office administrative services
+56121,Facilities support services
+56131,Employment placement agencies and executive search services
+56132,Temporary help services
+56133,Professional employer organizations
+56141,Document preparation services
+56142,Telephone call centres
+56143,Business service centres
+56144,Collection agencies
+56145,Credit bureaus
+56149,Other business support services
+56151,Travel agencies
+56152,Tour operators
+56159,Other travel arrangement and reservation services
+56161,Investigation guard and armoured car services
+56162,Security systems services
+56171,Exterminating and pest control services
+56172,Janitorial services
+56173,Landscaping services
+56174,Carpet and upholstery cleaning services
+56179,Other services to buildings and dwellings
+56191,Packaging and labelling services
+56192,Convention and trade show organizers
+56199,All other support services
+56211,Waste collectionUS
+56221,Waste treatment and disposalUS
+56291,Remediation servicesUS
+56292,Material recovery facilitiesUS
+56299,All other waste management servicesUS
+61111,Elementary and secondary schoolsUS
+61121,Community colleges and C.E.G.E.P.s
+61131,Universities
+61141,Business and secretarial schools
+61142,Computer training
+61143,Professional and management development training
+61151,Technical and trade schools
+61161,Fine arts schools
+61162,Athletic instruction
+61163,Language schools
+61169,All other schools and instruction
+61171,Educational support services
+62111,Offices of physicians
+62121,Offices of dentists
+62131,Offices of chiropractors
+62132,Offices of optometrists
+62133,Offices of mental health practitioners (except physicians)
+62134,Offices of physical occupational and speech therapists and audiologists
+62139,Offices of all other health practitioners
+62141,Family planning centres
+62142,Out-patient mental health and substance use centres
+62149,Other out-patient care centres
+62151,Medical and diagnostic laboratories
+62161,Home health care services
+62191,Ambulance services
+62199,All other ambulatory health care services
+62211,General medical and surgical hospitals
+62221,Psychiatric and substance use hospitals
+62231,Specialty hospitals (except psychiatric and substance use)
+62311,Nursing care facilities
+62321,Residential facilities for persons with a developmental disability
+62322,Residential facilities for persons with a mental health or substance use condition
+62331,Community care facilities for the elderly
+62399,Other residential care facilities
+62411,Child and youth services
+62412,Services for the elderly and persons with a disability
+62419,Other individual and family services
+62421,Community food services
+62422,Community housing services
+62423,Emergency and other relief services
+62431,Vocational rehabilitation services
+62441,Child day-care services
+71111,Theatre companies and dinner theatres
+71112,Dance companies
+71113,Musical groups and artists
+71119,Other performing arts companies
+71121,Spectator sports
+71131,Promoters (presenters) of performing arts sports and similar events with facilities
+71132,Promoters (presenters) of performing arts sports and similar events without facilities
+71141,Agents and managers for artists athletes entertainers and other public figures
+71151,Independent artists writers and performers
+71211,Museums
+71212,Historic and heritage sites
+71213,Zoos and botanical gardens
+71219,Nature parks and other similar institutions
+71311,Amusement and theme parks
+71312,Amusement arcades
+71321,Casinos (except casino hotels)
+71329,Other gambling industries
+71391,Golf courses and country clubs
+71392,Skiing facilities
+71393,Marinas
+71394,Fitness and recreational sports centres
+71395,Bowling centres
+71399,Other amusement and recreation industries
+72111,Hotels (except casino hotels) and motels
+72112,Casino hotels
+72119,Other traveller accommodation
+72121,Recreational vehicle (RV) parks and recreational camps
+72131,Rooming and boarding houses
+72231,Food service contractors
+72232,Caterers
+72233,Mobile food services
+72241,Drinking places (alcoholic beverages)
+72251,Full-service restaurants and limited-service eating places
+81111,Automotive mechanical and electrical repair and maintenance
+81112,Automotive body paint interior and glass repair
+81119,Other automotive repair and maintenance
+81121,Electronic and precision equipment repair and maintenance
+81131,Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance
+81141,Home and garden equipment and appliance repair and maintenance
+81142,Reupholstery and furniture repair
+81143,Footwear and leather goods repair
+81149,Other personal and household goods repair and maintenance
+81211,Hair care and esthetic servicesUS
+81219,Other personal care servicesUS
+81221,Funeral homesUS
+81222,Cemeteries and crematoriaUS
+81231,Coin-operated laundries and dry cleanersUS
+81232,Dry cleaning and laundry services (except coin-operated)US
+81233,Linen and uniform supplyUS
+81291,Pet care (except veterinary) servicesUS
+81292,Photo finishing servicesUS
+81293,Parking lots and garagesUS
+81299,All other personal servicesUS
+81311,Religious organizationsUS
+81321,Grant-making and giving servicesUS
+81331,Social advocacy organizationsUS
+81341,Civic and social organizationsUS
+81391,Business associationsUS
+81392,Professional organizationsUS
+81393,Labour organizationsUS
+81394,Political organizationsUS
+81399,Other membership organizationsUS
+81411,Private households
+91111,Defence servicesCAN
+91121,Federal courts of lawCAN
+91122,Federal correctional servicesCAN
+91123,Federal police servicesCAN
+91124,Federal regulatory servicesCAN
+91129,Other federal protective servicesCAN
+91131,Federal labour and employment servicesCAN
+91132,Immigration servicesCAN
+91139,Other federal labour employment and immigration servicesCAN
+91141,Foreign affairsCAN
+91142,International assistanceCAN
+91191,Other federal government public administrationCAN
+91211,Provincial courts of lawCAN
+91212,Provincial correctional servicesCAN
+91213,Provincial police servicesCAN
+91214,Provincial fire-fighting servicesCAN
+91215,Provincial regulatory servicesCAN
+91219,Other provincial protective servicesCAN
+91221,Provincial labour and employment servicesCAN
+91291,Other provincial and territorial public administrationCAN
+91311,Municipal courts of lawCAN
+91312,Municipal correctional servicesCAN
+91313,Municipal police servicesCAN
+91314,Municipal fire-fighting servicesCAN
+91315,Municipal regulatory servicesCAN
+91319,Other municipal protective servicesCAN
+91391,Other local municipal and regional public administrationCAN
+91411,Indigenous public administrationCAN
+91911,International and other extra-territorial public administrationCAN
+111110,Soybean farming
+111120,Oilseed (except soybean) farmingUS
+111130,Dry pea and bean farmingUS
+111140,Wheat farming
+111150,Corn farmingUS
+111160,Rice farming
+111190,Other grain farmingCAN
+111211,Potato farmingUS
+111219,Other vegetable (except potato) and melon farmingUS
+111310,Orange groves
+111320,Citrus (except orange) grovesUS
+111330,Non-citrus fruit and tree nut farmingCAN
+111411,Mushroom productionUS
+111412,Cannabis grown under cover
+111419,Other food crops grown under coverUS
+111421,Nursery and tree productionUS
+111422,Floriculture productionUS
+111910,Tobacco farming
+111920,Cotton farming
+111930,Sugar cane farming
+111940,Hay farmingUS
+111993,Fruit and vegetable combination farmingCAN
+111994,Maple syrup and products productionCAN
+111995,Cannabis grown in open fields
+111999,All other miscellaneous crop farmingCAN
+112110,Beef cattle ranching and farming including feedlotsCAN
+112120,Dairy cattle and milk production
+112210,Hog and pig farmingUS
+112310,Chicken egg productionUS
+112320,Broiler and other meat-type chicken production
+112330,Turkey production
+112340,Poultry hatcheries
+112391,Combination poultry and egg productionCAN
+112399,All other poultry productionCAN
+112410,Sheep farmingUS
+112420,Goat farming
+112510,AquacultureCAN
+112910,Apiculture
+112920,Horse and other equine production
+112930,Fur-bearing animal and rabbit production
+112991,Animal combination farmingCAN
+112999,All other miscellaneous animal productionCAN
+113110,Timber tract operations
+113210,Forest nurseries and gathering of forest productsUS
+113311,Logging (except contract)CAN
+113312,Contract loggingCAN
+114113,Salt water fishingCAN
+114114,Freshwater fishingCAN
+114210,Hunting and trapping
+115110,Support activities for crop productionCAN
+115210,Support activities for animal production
+115310,Support activities for forestry
+211110,Oil and gas extraction (except oil sands)CAN
+211141,In-situ oil sands extractionCAN
+211142,Mined oil sands extractionCAN
+212114,Bituminous coal mining
+212115,Subbituminous coal miningCAN
+212116,Lignite coal miningCAN
+212210,Iron ore mining
+212220,Gold and silver ore miningCAN
+212231,Lead-zinc ore miningUS
+212232,Nickel-copper ore miningCAN
+212233,Copper-zinc ore miningCAN
+212291,Uranium ore miningUS
+212299,All other metal ore miningUS
+212314,Granite mining and quarryingCAN
+212315,Limestone mining and quarryingCAN
+212316,Marble mining and quarryingCAN
+212317,Sandstone mining and quarryingCAN
+212323,Sand and gravel mining and quarryingCAN
+212326,Shale clay and refractory mineral mining and quarryingCAN		
+212392,Diamond miningCAN
+212393,Salt miningCAN
+212394,Asbestos miningCAN
+212395,Gypsum miningCAN
+212396,Potash miningCAN
+212397,Peat extractionCAN
+212398,All other non-metallic mineral mining and quarryingCAN
+213111,Oil and gas contract drilling
+213117,Contract drilling (except oil and gas)CAN
+213118,Services to oil and gas extractionCAN
+213119,Other support activities for miningCAN
+221111,Hydro-electric power generationUS
+221112,Fossil-fuel electric power generationUS
+221113,Nuclear electric power generationUS
+221119,Other electric power generationUS
+221121,Electric bulk power transmission and controlUS
+221122,Electric power distributionUS
+221210,Natural gas distributionUS
+221310,Water supply and irrigation systemsUS
+221320,Sewage treatment facilitiesUS
+221330,Steam and air-conditioning supplyUS
+236110,Residential building constructionCAN
+236210,Industrial building and structure constructionUS
+236220,Commercial and institutional building constructionUS
+237110,Water and sewer line and related structures constructionUS
+237120,Oil and gas pipeline and related structures constructionUS
+237130,Power and communication line and related structures constructionUS
+237210,Land subdivisionUS
+237310,Highway street and bridge constructionUS
+237990,Other heavy and civil engineering constructionUS
+238110,Poured concrete foundation and structure contractors
+238120,Structural steel and precast concrete contractorsUS
+238130,Framing contractorsUS
+238140,Masonry contractorsUS
+238150,Glass and glazing contractorsUS
+238160,Roofing contractorsUS
+238170,Siding contractorsUS
+238190,Other foundation structure and building exterior contractorsUS
+238210,Electrical contractors and other wiring installation contractors
+238220,Plumbing heating and air-conditioning contractorsUS
+238291,Elevator and escalator installation contractorsCAN
+238299,All other building equipment contractorsCAN
+238310,Drywall and insulation contractorsUS
+238320,Painting and wall covering contractors
+238330,Flooring contractors
+238340,Tile and terrazzo contractors
+238350,Finish carpentry contractors
+238390,Other building finishing contractors
+238910,Site preparation contractors
+238990,All other specialty trade contractorsUS
+311111,Dog and cat food manufacturingUS
+311119,Other animal food manufacturingUS
+311211,Flour millingUS
+311214,Rice milling and malt manufacturingCAN
+311221,Wet corn millingUS
+311224,Oilseed processingCAN
+311225,Fat and oil refining and blendingUS
+311230,Breakfast cereal manufacturing
+311310,Sugar manufacturingCAN
+311340,Non-chocolate confectionery manufacturing
+311351,Chocolate and chocolate confectionery manufacturing from cacao beansUS
+311352,Confectionery manufacturing from purchased chocolateUS
+311410,Frozen food manufacturingCAN
+311420,Fruit and vegetable canning pickling and dryingCAN
+311511,Fluid milk manufacturingUS
+311515,Butter cheese and dry and condensed dairy product manufacturingCAN		
+311520,Ice cream and frozen dessert manufacturing
+311614,Rendering and meat processing from carcassesCAN
+311615,Poultry slaughtering and processingUS
+311616,Beef cattle slaughteringCAN
+311617,Hog slaughteringCAN
+311619,Other animal slaughteringCAN
+311710,Seafood product preparation and packaging
+311811,Bakeries manufacture of products for retail saleUS
+311814,Commercial bakeries and frozen bakery product manufacturingCAN
+311821,Cookie and cracker manufacturingUS
+311824,Flour mixes dough and pasta manufacturing from purchased flourUS
+311830,Tortilla manufacturing
+311911,Roasted nut and peanut butter manufacturingUS
+311919,Other snack food manufacturingUS
+311920,Coffee and tea manufacturingUS
+311930,Flavouring syrup and concentrate manufacturing
+311940,Seasoning and dressing manufacturingMEX
+311990,All other food manufacturingCAN
+312110,Soft drink and ice manufacturingCAN
+312120,Breweries
+312130,WineriesUS
+312140,DistilleriesUS
+312210,Tobacco stemming and redrying
+312220,Tobacco product manufacturingCAN
+312310,Cannabis product manufacturing
+313110,Fibre yarn and thread millsUS
+313210,Broad-woven fabric mills
+313220,Narrow fabric mills and schiffli machine embroidery
+313230,Nonwoven fabric mills
+313240,Knit fabric mills
+313310,Textile and fabric finishing
+313320,Fabric coating
+314110,Carpet and rug mills
+314120,Curtain and linen mills
+314910,Textile bag and canvas millsUS
+314990,All other textile product millsCAN
+315120,Apparel knitting mills
+315210,Cut and sew clothing contractingUS
+315250,Cut and sew apparel manufacturing (except contractors)
+315990,Clothing accessories and other clothing manufacturingUS
+316110,Leather and hide tanning and finishing
+316210,Footwear manufacturingUS
+316990,Other leather and allied product manufacturingCAN
+321111,Sawmills (except shingle and shake mills)MEX
+321112,Shingle and shake millsMEX
+321114,Wood preservationUS
+321211,Hardwood veneer and plywood millsUS
+321212,Softwood veneer and plywood millsUS
+321215,Structural wood product manufacturingCAN
+321216,Particle board and fibreboard millsCAN
+321217,Waferboard millsCAN
+321911,Wood window and door manufacturingUS
+321919,Other millworkCAN
+321920,Wood container and pallet manufacturing
+321991,Manufactured (mobile) home manufacturingUS
+321992,Prefabricated wood building manufacturingUS
+321999,All other miscellaneous wood product manufacturingUS
+322111,Mechanical pulp millsCAN
+322112,Chemical pulp millsCAN
+322121,Paper (except newsprint) millsUS
+322122,Newsprint millsUS
+322130,Paperboard millsUS
+322211,Corrugated and solid fibre box manufacturingUS
+322212,Folding paperboard box manufacturingUS
+322219,Other paperboard container manufacturingUS
+322220,Paper bag and coated and treated paper manufacturing
+322230,Stationery product manufacturing
+322291,Sanitary paper product manufacturingUS
+322299,All other converted paper product manufacturingUS
+323113,Commercial screen printingUS
+323114,Quick printingUS
+323115,Digital printingUS
+323116,Manifold business forms printingUS
+323119,Other printingCAN
+323120,Support activities for printing
+324110,Petroleum refineries
+324121,Asphalt paving mixture and block manufacturingUS
+324122,Asphalt shingle and coating material manufacturingUS
+324190,Other petroleum and coal product manufacturingCAN
+325110,Petrochemical manufacturing
+325120,Industrial gas manufacturing
+325130,Synthetic dye and pigment manufacturing
+325181,Alkali and chlorine manufacturingCAN
+325189,All other basic inorganic chemical manufacturingCAN
+325190,Other basic organic chemical manufacturingMEX
+325210,Resin and synthetic rubber manufacturingCAN
+325220,Artificial and synthetic fibres and filaments manufacturing
+325313,Chemical fertilizer (except potash) manufacturingCAN
+325314,Mixed fertilizer manufacturingUS
+325320,Pesticide and other agricultural chemical manufacturing
+325410,Pharmaceutical and medicine manufacturingCAN
+325510,Paint and coating manufacturing
+325520,Adhesive manufacturing
+325610,Soap and cleaning compound manufacturingMEX
+325620,Toilet preparation manufacturing
+325910,Printing ink manufacturing
+325920,Explosives manufacturing
+325991,Custom compounding of purchased resinsUS
+325999,All other miscellaneous chemical product manufacturingCAN
+326111,Plastic bag and pouch manufacturingUS
+326114,Plastic film and sheet manufacturingCAN
+326121,Unlaminated plastic profile shape manufacturingUS
+326122,Plastic pipe and pipe fitting manufacturingUS
+326130,Laminated plastic plate sheet (except packaging) and shape manufacturing
+326140,Polystyrene foam product manufacturing
+326150,Urethane and other foam product (except polystyrene) manufacturing
+326160,Plastic bottle manufacturing
+326191,Plastic plumbing fixture manufacturingUS
+326193,Motor vehicle plastic parts manufacturingCAN
+326196,Plastic window and door manufacturingCAN
+326198,All other plastic product manufacturingCAN
+326210,Tire manufacturingCAN
+326220,Rubber and plastic hose and belting manufacturing
+326290,Other rubber product manufacturingMEX
+327110,Pottery ceramics and plumbing fixture manufacturingUS
+327120,Clay building material and refractory manufacturingUS
+327214,Glass manufacturingCAN
+327215,Glass product manufacturing from purchased glassUS
+327310,Cement manufacturing
+327320,Ready-mix concrete manufacturing
+327330,Concrete pipe brick and block manufacturingMEX
+327390,Other concrete product manufacturingUS
+327410,Lime manufacturing
+327420,Gypsum product manufacturing
+327910,Abrasive product manufacturing
+327990,All other non-metallic mineral product manufacturingCAN
+331110,Iron and steel mills and ferro-alloy manufacturingUS
+331210,Iron and steel pipes and tubes manufacturing from purchased steel
+331221,Cold-rolled steel shape manufacturingUS
+331222,Steel wire drawingUS
+331313,Primary production of alumina and aluminumCAN
+331317,Aluminum rolling drawing extruding and alloyingCAN
+331410,Non-ferrous metal (except aluminum) smelting and refiningUS
+331420,Copper rolling drawing extruding and alloying
+331490,Non-ferrous metal (except copper and aluminum) rolling drawing	extruding and alloyingCAN
+331511,Iron foundriesUS
+331514,Steel foundriesCAN
+331523,Non-ferrous metal die-casting foundriesCAN
+331529,Non-ferrous metal foundries (except die-casting)CAN
+332113,ForgingCAN
+332118,StampingCAN
+332210,Cutlery and hand tool manufacturingCAN
+332311,Prefabricated metal building and component manufacturingUS
+332314,Concrete reinforcing bar manufacturingCAN
+332319,Other plate work and fabricated structural product manufacturingCAN
+332321,Metal window and door manufacturingUS
+332329,Other ornamental and architectural metal product manufacturingCAN
+332410,Power boiler and heat exchanger manufacturing
+332420,Metal tank (heavy gauge) manufacturing
+332431,Metal can manufacturingUS
+332439,Other metal container manufacturingUS
+332510,Hardware manufacturing
+332611,Spring (heavy gauge) manufacturingCAN
+332619,Other fabricated wire product manufacturingCAN
+332710,Machine shops
+332720,Turned product and screw nut and bolt manufacturingMEX
+332810,Coating engraving cold and heat treating and allied activitiesMEX
+332910,Metal valve manufacturingMEX
+332991,Ball and roller bearing manufacturing
+332999,All other miscellaneous fabricated metal product manufacturingMEX
+333110,Agricultural implement manufacturingCAN
+333120,Construction machinery manufacturing
+333130,Mining and oil and gas field machinery manufacturingMEX
+333245,Sawmill and woodworking machinery manufacturingCAN
+333246,Rubber and plastics industry machinery manufacturingCAN
+333247,Paper industry machinery manufacturingCAN
+333248,All other industrial machinery manufacturingCAN
+333310,Commercial and service industry machinery manufacturingCAN
+333413,Industrial and commercial fan and blower and air purification equipment manufacturingUS
+333416,Heating equipment and commercial refrigeration equipment manufacturingCAN
+333511,Industrial mould manufacturingUS
+333519,Other metalworking machinery manufacturingCAN
+333611,Turbine and turbine generator set unit manufacturingUS
+333619,Other engine and power transmission equipment manufacturingCAN
+333910,Pump and compressor manufacturingCAN
+333920,Material handling equipment manufacturingMEX
+333990,All other general-purpose machinery manufacturingCAN
+334110,Computer and peripheral equipment manufacturingMEX
+334210,Telephone apparatus manufacturing
+334220,Radio and television broadcasting and wireless communications equipment manufacturing
+334290,Other communications equipment manufacturing
+334310,Audio and video equipment manufacturing
+334410,Semiconductor and other electronic component manufacturingMEX
+334511,Navigational and guidance instruments manufacturingUS
+334512,Measuring medical and controlling devices manufacturingCAN
+334610,Manufacturing and reproducing magnetic and optical mediaMEX
+335130,Electric lighting equipment manufacturing
+335210,Small electrical appliance manufacturingMEX
+335223,Major kitchen appliance manufacturingCAN
+335229,Other major appliance manufacturingCAN
+335311,Power distribution and specialty transformers manufacturingUS	
+335312,Motor and generator manufacturingUS
+335315,Switchgear and switchboard and relay and industrial control apparatus manufacturingCAN
+335910,Battery manufacturingCAN
+335920,Communication and energy wire and cable manufacturingCAN
+335930,Wiring device manufacturingCAN
+335990,All other electrical equipment and component manufacturingCAN
+336110,Automobile and light-duty motor vehicle manufacturingMEX
+336120,Heavy-duty truck manufacturing
+336211,Motor vehicle body manufacturingUS
+336212,Truck trailer manufacturingUS
+336215,Motor home travel trailer and camper manufacturingCAN
+336310,Motor vehicle gasoline engine and engine parts manufacturing
+336320,Motor vehicle electrical and electronic equipment manufacturing
+336330,Motor vehicle steering and suspension components (except spring) manufacturing
+336340,Motor vehicle brake system manufacturing
+336350,Motor vehicle transmission and power train parts manufacturing
+336360,Motor vehicle seating and interior trim manufacturing
+336370,Motor vehicle metal stamping
+336390,Other motor vehicle parts manufacturing
+336410,Aerospace product and parts manufacturingMEX
+336510,Railroad rolling stock manufacturing
+336611,Ship building and repairingUS
+336612,Boat buildingUS
+336990,Other transportation equipment manufacturingCAN
+337110,Wood kitchen cabinet and counter top manufacturing
+337121,Upholstered household furniture manufacturingUS
+337123,Other wood household furniture manufacturingCAN
+337126,Household furniture (except wood and upholstered) manufacturingCAN
+337127,Institutional furniture manufacturingUS
+337213,Wood office furniture including custom architectural woodwork manufacturingCAN
+337214,Office furniture (except wood) manufacturingUS
+337215,Showcase partition	shelving and locker manufacturingUS
+337910,Mattress manufacturing
+337920,Blind and shade manufacturing
+339110,Medical equipment and supplies manufacturingCAN
+339910,Jewellery and silverware manufacturingUS
+339920,Sporting and athletic goods manufacturing
+339930,Doll toy and game manufacturing
+339940,Office supplies (except paper) manufacturing
+339950,Sign manufacturing
+339990,All other miscellaneous manufacturingCAN
+411110,Live animal merchant wholesalersCAN
+411120,Oilseed and grain merchant wholesalersCAN
+411130,Nursery stock and plant merchant wholesalersCAN
+411190,Other farm product merchant wholesalersCAN
+412110,Petroleum petroleum products and other hydrocarbons merchant wholesalersCAN
+413110,General-line food merchant wholesalersCAN
+413120,Dairy and milk products merchant wholesalersCAN
+413130,Poultry and egg merchant wholesalersCAN
+413140,Fish and seafood product merchant wholesalersCAN
+413150,Fresh fruit and vegetable merchant wholesalersCAN
+413160,Red meat and meat product merchant wholesalersCAN
+413190,Other specialty-line food merchant wholesalersCAN
+413210,Non-alcoholic beverage merchant wholesalersCAN
+413220,Alcoholic beverage merchant wholesalersCAN
+413310,Cigarette and tobacco product merchant wholesalersCAN
+413410,Cannabis merchant wholesalers
+414110,Clothing and clothing accessories merchant wholesalersCAN
+414120,Footwear merchant wholesalersCAN
+414130,Piece goods notions and other dry goods merchant wholesalersCAN
+414210,Home entertainment equipment merchant wholesalersCAN
+414220,Household appliance merchant wholesalersCAN
+414310,China glassware crockery and pottery merchant wholesalersCAN
+414320,Floor covering merchant wholesalersCAN
+414330,Linen drapery and other textile furnishings merchant wholesalersCAN
+414390,Other home furnishings merchant wholesalersCAN
+414410,Jewellery and watch merchant wholesalersCAN
+414420,Book periodical and newspaper merchant wholesalersCAN
+414430,Photographic equipment and supplies merchant wholesalersCAN
+414440,Sound recording merchant wholesalersCAN
+414450,Video recording merchant wholesalersCAN
+414460,Toy and hobby goods merchant wholesalersCAN
+414470,Amusement and sporting goods merchant wholesalersCAN
+414510,Pharmaceuticals and pharmacy supplies merchant wholesalersCAN
+414520,Toiletries cosmetics and sundries merchant wholesalersCAN
+415110,New and used automobile and light-duty truck merchant wholesalersCAN
+415120,Truck truck tractor and bus merchant wholesalersCAN
+415190,Recreational and other motor vehicles merchant wholesalersCAN
+415210,Tire merchant wholesalersCAN
+415290,Other new motor vehicle parts and accessories merchant wholesalersCAN
+415310,Used motor vehicle parts and accessories merchant wholesalersCAN
+416110,Electrical wiring and construction supplies merchant wholesalersCAN
+416120,Plumbing heating and air-conditioning equipment and supplies merchant wholesalersCAN
+416210,Metal service centresCAN
+416310,General-line building supplies merchant wholesalersCAN
+416320,Lumber plywood and millwork merchant wholesalersCAN
+416330,Hardware merchant wholesalersCAN
+416340,Paint glass and wallpaper merchant wholesalersCAN
+416390,Other specialty-line building supplies merchant wholesalersCAN
+417110,Farm lawn and garden machinery and equipment merchant wholesalersCAN
+417210,Construction and forestry machinery equipment and supplies merchant wholesalersCAN
+417220,Mining and oil and gas well machinery equipment and supplies merchant wholesalersCAN
+417230,Industrial machinery equipment and supplies merchant wholesalersCAN
+417310,Computer computer peripheral and pre-packaged software merchant wholesalersCAN	
+417320,Electronic components navigational and communications equipment and supplies merchant wholesalersCAN
+417910,Office and store machinery and equipment merchant wholesalersCAN
+417920,Service establishment machinery equipment and supplies merchant wholesalersCAN
+417930,Professional machinery equipment and supplies merchant wholesalersCAN
+417990,All other machinery equipment and supplies merchant wholesalersCAN
+418110,Recyclable metal merchant wholesalersCAN
+418120,Recyclable paper and paperboard merchant wholesalersCAN
+418190,Other recyclable material merchant wholesalersCAN
+418210,Stationery and office supplies merchant wholesalersCAN
+418220,Other paper and disposable plastic product merchant wholesalersCAN
+418310,Agricultural feed merchant wholesalersCAN
+418320,Seed merchant wholesalersCAN
+418390,Agricultural chemical and other farm supplies merchant wholesalersCAN
+418410,Chemical (except agricultural) and allied product merchant wholesalersCAN
+418510,Mineral ore and precious metal merchant wholesalersCAN
+418610,Log wood chips and other wood products merchant wholesalersCAN
+418930,Second-hand goods (except machinery and automotive) merchant wholesalersCAN
+418990,All other merchant wholesalersCAN
+419110,Business-to-business electronic marketsUS
+419120,Wholesale trade agents and brokersUS
+441110,New car dealersUS
+441120,Used car dealersUS
+441210,Recreational vehicle dealersUS
+441220,Motorcycle boat and other motor vehicle dealersCAN
+441330,Automotive parts and accessories retailersUS
+441340,Tire dealersUS
+444110,Home centresUS
+444120,Paint and wallpaper retailersUS
+444140,Hardware retailersUS
+444180,Other building material dealersUS
+444230,Outdoor power equipment retailersUS
+444240,Nursery retailers and garden centresUS
+445110,Supermarkets and other grocery retailers (except Convenience retailers)US
+445131,Convenience retailersUS
+445132,Vending machine operatorsUS
+445230,Fruit and vegetable marketsUS
+445240,Meat marketsUS
+445250,Fish and seafood marketsUS
+445291,Baked goods retailersUS
+445292,Confectionery and nut retailersUS
+445298,All other specialty food retailersUS
+445320,Beer wine and liquor retailersUS
+449110,Furniture retailersUS
+449121,Floor covering retailersUS
+449122,Window treatment retailersUS
+449123,Print and picture frame retailersCAN
+449129,All other home furnishing retailersUS
+449211,Appliance television and other electronics retailersCAN
+449212,Computer and software retailersCAN
+449213,Camera and photographic supplies retailersCAN
+449214,Audio and video recording retailersCAN
+455110,Department storesUS
+455211,Warehouse clubs and SupercentresUS
+455212,Home and auto supplies retailersCAN
+455219,All other miscellaneous general merchandise retailersUS
+456110,Pharmacies and drug storesUS
+456120,Cosmetics beauty supplies and perfume retailersUS
+456130,Optical goods retailersUS
+456191,Food (health) supplement retailersUS
+456199,All other health and personal care retailersUS
+457110,Gasoline stations with convenience storesUS
+457120,Other gasoline stationsUS
+457211,Heating oil dealersCAN
+457212,Liquefied petroleum gas (bottled gas) dealersCAN
+457219,Other fuel dealersCAN
+458111,Men's clothing retailersCAN
+458112,Women's clothing retailersCAN
+458113,Children's and infants' clothing retailersCAN
+458114,Family clothing retailersCAN
+458115,Clothing accessories retailersCAN
+458116,Fur retailersCAN
+458119,All other clothing retailersCAN
+458210,Shoe retailersUS
+458310,Jewellery retailersUS
+458320,Luggage and leather goods retailersUS
+459111,Golf equipment and supplies specialty retailersCAN
+459112,Ski equipment and supplies specialty retailersCAN
+459113,Cycling equipment and supplies specialty retailersCAN
+459119,All other sporting goods retailersCAN
+459120,Hobby toy and game retailersUS
+459130,Sewing needlework and piece goods retailersUS
+459140,Musical instrument and supplies retailersUS
+459210,Book retailers and news dealersUS
+459310,FloristsUS
+459410,Office supplies and stationery retailersUS
+459420,Gift novelty and souvenir retailersUS
+459510,Used merchandise retailersUS
+459910,Pet and pet supplies retailersUS
+459920,Art dealersUS
+459930,Manufactured (mobile) home dealersUS
+459992,Beer and wine-making supplies retailersCAN
+459993,Cannabis retailersCAN
+459999,All other miscellaneous retailers (except beer and wine-making supplies retailers)CAN
+481110,Scheduled air transportationCAN
+481214,Non-scheduled chartered air transportationCAN
+481215,Non-scheduled specialty flying servicesCAN
+482112,Short-haul freight rail transportationUS
+482113,Mainline freight rail transportationCAN
+482114,Passenger rail transportationCAN
+483115,Deep sea coastal and Great Lakes water transportation (except by ferries)CAN
+483116,Deep sea coastal and Great Lakes water transportation by ferriesCAN
+483213,Inland water transportation (except by ferries)CAN
+483214,Inland water transportation by ferriesCAN
+484110,General freight trucking localUS
+484121,General freight trucking long distance truck-load (single shipper)US
+484122,General freight trucking long distance less than truck-load (multiple shippers)US
+484210,Used household and office goods moving
+484221,Bulk liquids trucking localCAN
+484222,Dry bulk materials trucking localCAN
+484223,Forest products trucking localCAN
+484229,Other specialized freight (except used goods) trucking localCAN
+484231,Bulk liquids trucking long distanceCAN
+484232,Dry bulk materials trucking long distanceCAN
+484233,Forest products trucking long distanceCAN
+484239,Other specialized freight (except used goods) trucking long distanceCAN
+485110,Urban transit systemsCAN
+485210,Interurban and rural bus transportation
+485310,Taxi serviceUS
+485320,Limousine service
+485410,School and employee bus transportation
+485510,Charter bus industry
+485990,Other transit and ground passenger transportationCAN
+486110,Pipeline transportation of crude oil
+486210,Pipeline transportation of natural gas
+486910,Pipeline transportation of refined petroleum products
+486990,All other pipeline transportation
+487110,Scenic and sightseeing transportation land
+487210,Scenic and sightseeing transportation water
+487990,Scenic and sightseeing transportation other
+488111,Air traffic control
+488119,Other airport operationsUS
+488190,Other support activities for air transportation
+488210,Support activities for rail transportation
+488310,Port and harbour operations
+488320,Marine cargo handling
+488331,Marine salvage servicesCAN
+488332,Ship piloting servicesCAN
+488339,Other navigational services to shippingCAN
+488390,Other support activities for water transportation
+488410,Motor vehicle towing
+488490,Other support activities for road transportationUS
+488511,Marine shipping agenciesCAN
+488519,Other freight transportation arrangementCAN
+488990,Other support activities for transportationMEX
+491110,Postal service
+492110,Couriers
+492210,Local messengers and local delivery
+493110,General warehousing and storageUS
+493120,Refrigerated warehousing and storage
+493130,Farm product warehousing and storage
+493190,Other warehousing and storage
+512110,Motion picture and video productionUS
+512120,Motion picture and video distribution
+512130,Motion picture and video exhibitionMEX
+512190,Post-production and other motion picture and video industriesMEX
+512230,Music publishersCAN
+512240,Sound recording studios
+512250,Record production and distribution
+512290,Other sound recording industries
+513110,Newspaper publishersUS
+513120,Periodical publishersUS
+513130,Book publishersUS
+513140,Directory and mailing list publishersUS
+513190,Other publishersCAN
+513211,Software publishers (except video game publishers)CAN
+513212,Video game publishersCAN
+516110,Radio broadcasting stations
+516120,Television broadcasting stations
+516211,Pay and specialty televisionCAN
+516212,Media streaming distribution servicesCAN
+516219,Other media content providersCAN
+517310,Wired and wireless telecommunications carriers (except satellite)CAN
+517410,Satellite telecommunications
+517911,Telecommunications resellersCAN
+517919,All other telecommunicationsCAN
+518210,Computing infrastructure providers data processing web hosting and related services
+519211,LibrariesCAN
+519212,ArchivesCAN
+519290,Web search portals and all other information services
+521110,Monetary authorities
+522111,Personal and commercial banking industryCAN
+522112,Corporate and institutional banking industryCAN
+522130,Credit unionsUS
+522190,Other depository credit intermediationUS
+522210,Credit card issuingUS
+522220,Sales financingUS
+522291,Consumer lendingUS
+522299,All other non-depository credit intermediationCAN
+522310,Mortgage and non-mortgage loan brokersUS
+522321,Central credit unionsCAN
+522329,Other financial transactions processing and clearing house activitiesCAN
+522390,Other activities related to credit intermediationUS
+523110,Investment banking and securities dealingUS
+523120,Securities brokerageUS
+523130,Commodity contracts dealingUS
+523140,Commodity contracts brokerageUS
+523210,Securities and commodity exchanges
+523910,Miscellaneous intermediationUS
+523920,Portfolio managementUS
+523930,Investment adviceUS
+523990,All other financial investment activitiesCAN
+524111,Direct individual life health and medical insurance carriersCAN
+524112,Direct group life health and medical insurance carriersCAN
+524121,Direct general property and casualty insurance carriersCAN
+524122,Direct private automobile insurance carriersCAN
+524123,Direct public automobile insurance carriersCAN
+524124,Direct property insurance carriersCAN
+524125,Direct liability insurance carriersCAN
+524129,Other direct insurance (except life health and medical) carriersCAN
+524131,Life reinsurance carriersCAN
+524132,Accident and sickness reinsurance carriersCAN
+524133,Automobile reinsurance carriersCAN
+524134,Property reinsurance carriersCAN
+524135,Liability reinsurance carriersCAN
+524139,General and other reinsurance carriersCAN
+524210,Insurance agencies and brokeragesUS
+524291,Claims adjustersUS
+524299,All other insurance related activitiesCAN
+526111,Trusteed pension fundsCAN
+526112,Non-trusteed pension fundsCAN
+526911,Equity funds
+526912,Equity funds
+526913,Mortgage fundsCAN
+526914,Money market fundsCAN
+526915,Bond and income / dividend funds
+526916,Bond and income / dividend funds
+526917,Balanced funds / asset allocation fundsCAN
+526919,Other open-ended fundsCAN
+526930,Segregated (except pension) fundsCAN
+526981,Securitization vehiclesCAN
+526989,All other miscellaneous funds and financial vehiclesCAN
+531111,Lessors of residential buildings and dwellings (except social housing projects)CAN
+531112,Lessors of social housing projectsCAN
+531120,Lessors of non-residential buildings (except mini-warehouses)US
+531130,Self-storage mini-warehousesUS
+531190,Lessors of other real estate propertyUS
+531211,Real estate agentsCAN
+531212,Offices of real estate brokersCAN
+531310,Real estate property managersCAN
+531320,Offices of real estate appraisersUS
+531390,Other activities related to real estateUS
+532111,Passenger car rentalUS
+532112,Passenger car leasingUS
+532120,Truck utility trailer and recreational vehicle (RV) rental and leasingUS
+532210,Consumer electronics and appliance rental
+532280,All other consumer goods rentalCAN
+532310,General rental centres
+532410,Construction transportation mining	and forestry machinery and equipment rental and leasing
+532420,Office machinery and equipment rental and leasing
+532490,Other commercial and industrial machinery and equipment rental and leasingUS
+533110,Lessors of non-financial intangible assets (except copyrighted works)
+541110,Offices of lawyers
+541120,Offices of notaries
+541190,Other legal servicesMEX
+541212,Offices of accountantsCAN
+541213,Tax preparation servicesUS
+541215,Bookkeeping payroll and related servicesCAN
+541310,Architectural services
+541320,Landscape architectural services
+541330,Engineering services
+541340,Drafting services
+541350,Building inspection services
+541360,Geophysical surveying and mapping services
+541370,Surveying and mapping (except geophysical) services
+541380,Testing laboratories
+541410,Interior design services
+541420,Industrial design services
+541430,Graphic design services
+541490,Other specialized design services
+541514,Computer systems design and related services (except video game design and development)CAN
+541515,Video game design and development servicesCAN
+541611,Administrative management and general management consulting servicesUS
+541612,Human resources consulting servicesUS
+541619,Other management consulting servicesCAN
+541620,Environmental consulting services
+541690,Other scientific and technical consulting services
+541710,Research and development in the physical engineering and life sciencesCAN
+541720,Research and development in the social sciences and humanitiesUS
+541810,Advertising agencies
+541820,Public relations services
+541830,Media buying agencies
+541840,Media representatives
+541850,Display advertising
+541860,Direct mail advertising
+541870,Advertising material distribution services
+541891,Specialty advertising distributorsCAN
+541899,All other services related to advertisingCAN
+541910,Marketing research and public opinion polling
+541920,Photographic servicesMEX
+541930,Translation and interpretation services
+541940,Veterinary servicesUS
+541990,All other professional scientific and technical services
+551113,Holding companiesCAN
+551114,Corporate regional and subsidiary management offices and companiesUS
+561110,Office administrative services
+561210,Facilities support services
+561310,Employment placement agencies and executive search services
+561320,Temporary help services
+561330,Professional employer organizations
+561410,Document preparation services
+561420,Telephone call centresCAN
+561430,Business service centresCAN
+561440,Collection agencies
+561450,Credit bureaus
+561490,Other business support servicesMEX
+561510,Travel agencies
+561520,Tour operators
+561590,Other travel arrangement and reservation servicesMEX
+561611,Investigation servicesUS
+561612,Security guard and patrol servicesUS
+561613,Armoured car servicesUS
+561621,Security systems services (except locksmiths)US
+561622,LocksmithsUS
+561710,Exterminating and pest control services
+561721,Window cleaning servicesCAN
+561722,Janitorial services (except window cleaning)CAN
+561730,Landscaping services
+561740,Carpet and upholstery cleaning services
+561791,Duct and chimney cleaning servicesCAN
+561799,All other services to buildings and dwellingsCAN
+561910,Packaging and labelling services
+561920,Convention and trade show organizers
+561990,All other support services
+562110,Waste collectionCAN
+562210,Waste treatment and disposalCAN
+562910,Remediation servicesUS
+562920,Material recovery facilitiesUS
+562990,All other waste management servicesCAN
+611110,Elementary and secondary schoolsUS
+611210,Community colleges and C.E.G.E.P.sUS
+611310,UniversitiesUS
+611410,Business and secretarial schoolsUS
+611420,Computer trainingUS
+611430,Professional and management development trainingUS
+611510,Technical and trade schoolsCAN
+611610,Fine arts schoolsUS
+611620,Athletic instructionUS
+611630,Language schoolsUS
+611690,All other schools and instructionCAN
+611710,Educational support services
+621110,Offices of physiciansCAN
+621210,Offices of dentistsUS
+621310,Offices of chiropractorsUS
+621320,Offices of optometrists
+621330,Offices of mental health practitioners (except physicians)US
+621340,Offices of physical occupational and speech therapists and audiologistsUS
+621390,Offices of all other health practitionersCAN
+621410,Family planning centresUS
+621420,Out-patient mental health and substance use centresUS
+621494,Community health centresCAN
+621499,All other out-patient care centresCAN
+621510,Medical and diagnostic laboratoriesCAN
+621610,Home health care services
+621911,Ambulance (except air ambulance) servicesCAN
+621912,Air ambulance servicesCAN
+621990,All other ambulatory health care servicesCAN
+622111,General (except paediatric) hospitalsCAN
+622112,Paediatric hospitalsCAN
+622210,Psychiatric and substance use hospitalsUS
+622310,Specialty hospitals (except psychiatric and substance use)US
+623110,Nursing care facilitiesUS
+623210,Residential facilities for persons with a developmental disabilityUS
+623221,Residential facilities for persons with a mental health or substance use conditionCAN
+623222,Homes for persons with a psychiatric disabilityCAN
+623310,Community care facilities for the elderlyCAN
+623991,Transition homes for victims and survivors of abuse and domestic violenceCAN
+623992,Homes for children with a mental health condition or disabilityCAN
+623993,Homes for persons with a physical disabilityCAN
+623999,All other residential care facilitiesCAN
+624110,Child and youth servicesUS
+624120,Services for the elderly and persons with a disabilityUS
+624190,Other individual and family servicesUS
+624210,Community food servicesUS
+624220,Community housing servicesCAN
+624230,Emergency and other relief servicesUS
+624310,Vocational rehabilitation servicesUS
+624410,Child day-care servicesUS
+711111,Theatre (except musical) companiesCAN
+711112,Musical theatre and opera companiesCAN
+711120,Dance companiesUS
+711130,Musical groups and artistsUS
+711190,Other performing arts companiesUS
+711213,Horse race tracksCAN
+711214,Other racing facilities and related activitiesCAN
+711215,Independent athletes performing before a paying audienceCAN
+711217,Sports teams and clubs performing before a paying audienceCAN
+711311,Live theatres and other performing arts presenters with facilitiesCAN
+711319,Sports stadiums and other presenters with facilitiesCAN
+711321,Performing arts promoters (presenters) without facilitiesCAN
+711322,Festivals without facilitiesCAN
+711329,Sports presenters and other presenters without facilitiesCAN
+711411,Agents and managers for artists entertainers and other public figuresCAN
+711412,Sports agents and managersCAN
+711511,Independent visual artists and artisansCAN
+711512,Independent actors comedians and performersCAN
+711513,Independent writers and authorsCAN
+712111,Non-commercial art museums and galleriesCAN
+712115,History and science museumsCAN
+712119,Other museumsCAN
+712120,Historic and heritage sites
+712130,Zoos and botanical gardensUS
+712190,Nature parks and other similar institutions
+713110,Amusement and theme parksUS
+713120,Amusement arcades
+713210,Casinos (except casino hotels)
+713291,LotteriesMEX
+713299,All other gambling industriesMEX
+713910,Golf courses and country clubs
+713920,Skiing facilities
+713930,Marinas
+713940,Fitness and recreational sports centresUS
+713950,Bowling centres
+713991,Sports clubs teams and leagues performing before a non-paying audienceCAN
+713992,Other sport facilitiesCAN
+713999,All other amusement and recreation industriesCAN
+721111,HotelsCAN
+721112,Motor hotelsCAN
+721113,ResortsCAN
+721114,MotelsCAN
+721120,Casino hotels
+721191,Bed and breakfastUS
+721192,Housekeeping cottages and cabinsCAN
+721198,All other traveller accommodationCAN
+721211,Recreational vehicle (RV) parks and campgroundsUS
+721212,Hunting and fishing campsCAN
+721213,Recreational (except hunting and fishing) and vacation campsCAN
+721310,Rooming and boarding housesUS
+722310,Food service contractors
+722320,Caterers
+722330,Mobile food services
+722410,Drinking places (alcoholic beverages)US
+722511,Full-service restaurantsUS
+722512,Limited-service eating placesCAN
+811111,General automotive repairUS
+811113,Specialized automotive repairUS
+811121,Automotive body paint and interior repair and maintenanceUS
+811122,Automotive glass replacement shopsUS
+811192,Car washesUS
+811199,All other automotive repair and maintenanceCAN
+811210,Electronic and precision equipment repair and maintenanceCAN
+811310,Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenanceUS
+811411,Home and garden equipment repair and maintenanceUS
+811412,Appliance repair and maintenanceUS
+811420,Reupholstery and furniture repair
+811430,Footwear and leather goods repair
+811490,Other personal and household goods repair and maintenanceUS
+812114,Barber shopsCAN
+812115,Beauty salonsCAN
+812116,Unisex hair salonsCAN
+812190,Other personal care servicesCAN
+812210,Funeral homesUS
+812220,Cemeteries and crematoriaUS
+812310,Coin-operated laundries and dry cleanersUS
+812320,Dry cleaning and laundry services (except coin-operated)US
+812330,Linen and uniform supplyCAN
+812910,Pet care (except veterinary) servicesUS
+812921,Photo finishing laboratories (except one-hour)US
+812922,One-hour photo finishingUS
+812930,Parking lots and garagesUS
+812990,All other personal servicesUS
+813110,Religious organizationsUS
+813210,Grant-making and giving servicesCAN
+813310,Social advocacy organizationsCAN
+813410,Civic and social organizationsUS
+813910,Business associationsUS
+813920,Professional organizationsUS
+813930,Labour organizationsUS
+813940,Political organizationsUS
+813990,Other membership organizationsUS
+814110,Private households
+911110,Defence servicesCAN
+911210,Federal courts of lawCAN
+911220,Federal correctional servicesCAN
+911230,Federal police servicesCAN
+911240,Federal regulatory servicesCAN
+911290,Other federal protective servicesCAN
+911310,Federal labour and employment servicesCAN
+911320,Immigration servicesCAN
+911390,Other federal labour employment and immigration servicesCAN
+911410,Foreign affairsCAN
+911420,International assistanceCAN
+911910,Other federal government public administrationCAN
+912110,Provincial courts of lawCAN
+912120,Provincial correctional servicesCAN
+912130,Provincial police servicesCAN
+912140,Provincial fire-fighting servicesCAN
+912150,Provincial regulatory servicesCAN
+912190,Other provincial protective servicesCAN
+912210,Provincial labour and employment servicesCAN
+912910,Other provincial and territorial public administrationCAN
+913110,Municipal courts of lawCAN
+913120,Municipal correctional servicesCAN
+913130,Municipal police servicesCAN
+913140,Municipal fire-fighting servicesCAN
+913150,Municipal regulatory servicesCAN
+913190,Other municipal protective servicesCAN
+913910,Other local municipal and regional public administrationCAN
+914111,First Nations public administrationCAN
+914112,Métis public administrationCAN
+914113,Inuit public administrationCAN
+919110,International and other extra-territorial public administrationCAN

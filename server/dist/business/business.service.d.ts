@@ -6,21 +6,21 @@ export declare class BusinessService {
     businesses(): Promise<{
         id: string;
         name: string;
-        industry: string;
+        NAICSId: number | null;
         createdAt: Date;
         updatedAt: Date;
     }[]>;
     business(id: string): Promise<{
         id: string;
         name: string;
-        industry: string;
+        NAICSId: number | null;
         createdAt: Date;
         updatedAt: Date;
     }>;
     createBusiness(data: BusinessCreateInput): Promise<{
         id: string;
         name: string;
-        industry: string;
+        NAICSId: number | null;
         createdAt: Date;
         updatedAt: Date;
     }>;

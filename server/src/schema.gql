@@ -5,7 +5,6 @@
 type Business {
   createdAt: DateTime!
   id: ID!
-  industry: String!
   name: String!
   updatedAt: DateTime!
 }

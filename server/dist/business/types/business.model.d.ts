@@ -3,5 +3,4 @@ export declare class Business {
     createdAt: Date;
     updatedAt: Date;
     name: string;
-    industry: string;
 }

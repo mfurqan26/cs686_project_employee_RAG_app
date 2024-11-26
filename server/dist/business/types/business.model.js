@@ -30,10 +30,6 @@ __decorate([
     (0, graphql_1.Field)(),
     __metadata("design:type", String)
 ], Business.prototype, "name", void 0);
-__decorate([
-    (0, graphql_1.Field)(),
-    __metadata("design:type", String)
-], Business.prototype, "industry", void 0);
 exports.Business = Business = __decorate([
     (0, graphql_1.ObjectType)()
 ], Business);

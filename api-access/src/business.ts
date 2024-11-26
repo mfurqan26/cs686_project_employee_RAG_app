@@ -6,7 +6,6 @@ export const BUSINESS_FIELDS = gql`
     createdAt
     updatedAt
     name
-    industry
   }
 `;
 

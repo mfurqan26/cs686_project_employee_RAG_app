@@ -13,7 +13,4 @@ export class Business {
 
   @Field()
   name: string;
-
-  @Field()
-  industry: string;
 }
