@@ -3,10 +3,17 @@
 # ------------------------------------------------------
 
 type Business {
+  NAICSId: Int
   createdAt: DateTime!
   id: ID!
   name: String!
   updatedAt: DateTime!
+}
+
+input BusinessCreateInput {
+  id: String!
+  naicsId: Int
+  name: String!
 }
 
 """
@@ -15,10 +22,37 @@ A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date
 scalar DateTime
 
 type Mutation {
-  createBusiness(industry: String!, name: String!): Business!
+  createBusiness(data: BusinessCreateInput!): Business!
+}
+
+type NAICS {
+  Business: [Business!]
+  NAICSDescriptor: [NAICSDescriptor!]
+  code: ID!
+  createdAt: DateTime!
+  name: String!
+  updatedAt: DateTime!
+}
+
+type NAICSDescriptor {
+  category: [NAICSDescriptorCategory!]!
+  content: String!
+  naics: NAICS!
+  naicsId: Float!
+}
+
+enum NAICSDescriptorCategory {
+  DEFINITION
+  EXAMPLE
+  EXCLUSION
+  ILLUSTRATIVE_EXAMPLE
+  INCLUSION
 }
 
 type Query {
   business(id: String!): Business
   businesses: [Business!]!
+  naics(code: Int!): NAICS
+  naicsExists(code: Int!): Boolean!
+  naicsList: [NAICS!]!
 }

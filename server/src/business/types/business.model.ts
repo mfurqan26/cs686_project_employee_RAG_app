@@ -1,4 +1,4 @@
-import { ObjectType, Field, ID } from '@nestjs/graphql';
+import { ObjectType, Field, ID, Int } from '@nestjs/graphql';
 
 @ObjectType()
 export class Business {
@@ -13,4 +13,7 @@ export class Business {
 
   @Field()
   name: string;
+
+  @Field(() => Int, { nullable: true })
+  NAICSId?: number;
 }

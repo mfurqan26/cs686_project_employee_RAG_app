@@ -1,0 +1,33 @@
+{
+  "name": "api-access",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "api-access/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/api-access",
+        "main": "api-access/src/index.ts",
+        "tsConfig": "api-access/tsconfig.lib.json",
+        "assets": ["api-access/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "api-access/jest.config.ts"
+      }
+    },
+    "gen-api-types": {
+      "command": "npx graphql-codegen --config api-access/codegen.ts"
+    }
+  },
+  "tags": []
+}

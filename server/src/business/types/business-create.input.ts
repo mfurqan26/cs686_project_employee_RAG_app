@@ -1,4 +1,4 @@
-import { InputType, Field } from '@nestjs/graphql';
+import { InputType, Field, Int } from '@nestjs/graphql';
 import { IsOptional } from 'class-validator';
 
 @InputType()
@@ -10,6 +10,6 @@ export class BusinessCreateInput {
   @Field()
   name: string;
 
-  @Field()
-  industry: string;
+  @Field(() => Int, { nullable: true })
+  naicsId?: number;
 }

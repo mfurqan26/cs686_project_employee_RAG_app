@@ -4,6 +4,7 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { ConfigModule } from '@nestjs/config';
 import { PrismaModule } from 'nestjs-prisma';
 import { BusinessModule } from '../business/business.module';
+import { NAICSModule } from '../naics/naics.module';
 import { join } from 'path';
 
 @Module({
@@ -19,6 +20,7 @@ import { join } from 'path';
       playground: true,
     }),
     BusinessModule,
+    NAICSModule,
   ],
 })
 export class AppModule {}

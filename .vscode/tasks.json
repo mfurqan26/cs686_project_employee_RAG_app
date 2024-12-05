@@ -2,9 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Prisma Generate & Push",
+      "label": "Prisma Generate & Push & Seed",
       "type": "shell",
-      "command": "cd server; npx prisma generate; npx prisma db push",
+      "command": "cd server; npx prisma generate; npx prisma db push; npx ts-node  -r tsconfig-paths/register prisma/seed.ts",
       "options": {
         "shell": {
           "executable": "powershell.exe"
@@ -21,24 +21,7 @@
       "presentation": {
         "reveal": "always"
       },
-      "problemMatcher": {
-        "owner": "typescript",
-        "fileLocation": ["relative", "${workspaceFolder}"],
-        "pattern": {
-          "regexp": "^(.*)\\(([0-9]+),([0-9]+)\\):\\s+(error|warning)\\s+(TS[0-9]+):\\s+(.*)$",
-          "file": 1,
-          "line": 2,
-          "column": 3,
-          "severity": 4,
-          "code": 5,
-          "message": 6
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^.*Starting compilation.*",
-          "endsPattern": "^.*Compilation complete.*"
-        }
-      }
+      "problemMatcher": []
     },
     {
       "label": "Prisma Migrate",
