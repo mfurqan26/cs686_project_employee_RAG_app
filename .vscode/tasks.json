@@ -77,7 +77,7 @@
     {
       "label": "Run Client",
       "type": "shell",
-      "command": "cd client; $env:PORT=4200; npm run dev -- --port 4200",
+      "command": "cd client; $env:PORT=4203; npm run dev -- --port 4203",
       "group": "none",
       "isBackground": true,
       "presentation": {

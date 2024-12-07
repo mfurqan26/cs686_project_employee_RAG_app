@@ -13,6 +13,13 @@ interface NAICS_CSV {
   name: string;
 }
 
+interface NOC_CSV {
+  code: string;
+  level: number;
+  title: string;
+  definition: string;
+}
+
 interface NAICS_Example_CSV {
   naicsId: number;
   content: string;
@@ -73,6 +80,66 @@ export class CSVImport {
             });
             for (const updateData of NAICSUpdateArray) {
               await prisma.nAICS.update(updateData);
+            }
+            resolve();
+          });
+        });
+    });
+  }
+
+  async loadNOC() {
+    const filename = 'NOC-2021.csv';
+
+    const stream = await getStream(path.join(__dirname, `../data/${filename}`));
+    const csvStream = csv.parseStream(stream, { headers: true });
+    const NOCCreateArray: NOC_CSV[] = [];
+    const NOCUpdateArray: Prisma.NOCUpdateArgs[] = [];
+    const existingNOC = await this.prisma.nOC.findMany();
+
+    await new Promise<void>((resolve, reject) => {
+      csvStream
+        .on('data', (data) => {
+          const codeStr = data['code'].trim();
+          if (codeStr) {
+            const code = codeStr;
+            if (existingNOC.some((noc) => noc.code === code)) {
+              const existingNOCRecord = existingNOC.find((noc) => noc.code === code);
+              // If all fields are the same, do no update
+              if (
+                existingNOCRecord &&
+                existingNOCRecord.title === data['title'].trim() &&
+                existingNOCRecord.definition === data['definition'].trim() &&
+                existingNOCRecord.level === Number(data['level'])
+              ) {
+                return;
+              }
+              NOCUpdateArray.push({
+                where: { code },
+                data: {
+                  title: data['title'].trim(),
+                  definition: data['definition'].trim(),
+                  level: Number(data['level']),
+                },
+              });
+            } else {
+              NOCCreateArray.push({
+                code,
+                level: Number(data['level']),
+                title: data['title'].trim(),
+                definition: data['definition'].trim(),
+              });
+            }
+          }
+        })
+        .once('end', async () => {
+          const checkBlank = NOCCreateArray.filter((noc) => noc.code);
+          await this.prisma.$transaction(async (prisma) => {
+            await prisma.nOC.createMany({
+              data: checkBlank,
+              skipDuplicates: true,
+            });
+            for (const updateData of NOCUpdateArray) {
+              await prisma.nOC.update(updateData);
             }
             resolve();
           });

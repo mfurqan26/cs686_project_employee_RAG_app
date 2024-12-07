@@ -9,6 +9,7 @@ export class DataUtils {
     await csvImport.importNAICS();
     await csvImport.loadNAICSExamples();
     await csvImport.loadNAICSDefinitions();
+    await csvImport.loadNOC();
   }
 
   public static async reset() {
@@ -17,5 +18,6 @@ export class DataUtils {
     await prisma.business.deleteMany();
     await prisma.nAICSDescriptor.deleteMany();
     await prisma.nAICS.deleteMany();
+    await prisma.nOC.deleteMany();
   }
 }
