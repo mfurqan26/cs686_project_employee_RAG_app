@@ -36,3 +36,21 @@ export const CREATE_BUSINESS_GQL = gql`
     }
   }
 `;
+
+export const UPDATE_BUSINESS_GQL = gql`
+  ${BUSINESS_FIELDS}
+  mutation updateBusiness($data: BusinessUpdateInput!) {
+    updateBusiness(data: $data) {
+      ...Business
+    }
+  }
+`;
+
+export const DELETE_BUSINESS_GQL = gql`
+  ${BUSINESS_FIELDS}
+  mutation deleteBusiness($id: String!) {
+    deleteBusiness(id: $id) {
+      ...Business
+    }
+  }
+`;

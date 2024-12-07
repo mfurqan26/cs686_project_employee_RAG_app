@@ -32,13 +32,31 @@ export type BusinessCreateInput = {
   name: Scalars['String']['input'];
 };
 
+export type BusinessUpdateInput = {
+  id: Scalars['ID']['input'];
+  naicsId?: InputMaybe<Scalars['Float']['input']>;
+  name?: InputMaybe<Scalars['String']['input']>;
+};
+
 export type Mutation = {
   createBusiness: Business;
+  deleteBusiness: Business;
+  updateBusiness: Business;
 };
 
 
 export type MutationcreateBusinessArgs = {
   data: BusinessCreateInput;
+};
+
+
+export type MutationdeleteBusinessArgs = {
+  id: Scalars['String']['input'];
+};
+
+
+export type MutationupdateBusinessArgs = {
+  data: BusinessUpdateInput;
 };
 
 export type NAICS = {
@@ -138,6 +156,20 @@ export type naicsExistsQueryVariables = Exact<{
 
 
 export type naicsExistsQuery = { naicsExists: boolean };
+
+export type updateBusinessMutationVariables = Exact<{
+  data: BusinessUpdateInput;
+}>;
+
+
+export type updateBusinessMutation = { updateBusiness: { __typename: 'Business', id: string, createdAt: any, updatedAt: any, name: string, NAICSId: number | null } };
+
+export type deleteBusinessMutationVariables = Exact<{
+  id: Scalars['String']['input'];
+}>;
+
+
+export type deleteBusinessMutation = { deleteBusiness: { __typename: 'Business', id: string, createdAt: any, updatedAt: any, name: string, NAICSId: number | null } };
 
 export const BusinessFieldsFragmentDoc = gql`
     fragment BusinessFields on Business {
@@ -447,3 +479,69 @@ export type naicsExistsQueryHookResult = ReturnType<typeof usenaicsExistsQuery>;
 export type naicsExistsLazyQueryHookResult = ReturnType<typeof usenaicsExistsLazyQuery>;
 export type naicsExistsSuspenseQueryHookResult = ReturnType<typeof usenaicsExistsSuspenseQuery>;
 export type naicsExistsQueryResult = Apollo.QueryResult<naicsExistsQuery, naicsExistsQueryVariables>;
+export const updateBusinessDocument = gql`
+    mutation updateBusiness($data: BusinessUpdateInput!) {
+  updateBusiness(data: $data) {
+    ...Business
+  }
+}
+    ${BusinessFragmentDoc}`;
+export type updateBusinessMutationFn = Apollo.MutationFunction<updateBusinessMutation, updateBusinessMutationVariables>;
+
+/**
+ * __useupdateBusinessMutation__
+ *
+ * To run a mutation, you first call `useupdateBusinessMutation` within a React component and pass it any options that fit your needs.
+ * When your component renders, `useupdateBusinessMutation` returns a tuple that includes:
+ * - A mutate function that you can call at any time to execute the mutation
+ * - An object with fields that represent the current status of the mutation's execution
+ *
+ * @param baseOptions options that will be passed into the mutation, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options-2;
+ *
+ * @example
+ * const [updateBusinessMutation, { data, loading, error }] = useupdateBusinessMutation({
+ *   variables: {
+ *      data: // value for 'data'
+ *   },
+ * });
+ */
+export function useupdateBusinessMutation(baseOptions?: Apollo.MutationHookOptions<updateBusinessMutation, updateBusinessMutationVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useMutation<updateBusinessMutation, updateBusinessMutationVariables>(updateBusinessDocument, options);
+      }
+export type updateBusinessMutationHookResult = ReturnType<typeof useupdateBusinessMutation>;
+export type updateBusinessMutationResult = Apollo.MutationResult<updateBusinessMutation>;
+export type updateBusinessMutationOptions = Apollo.BaseMutationOptions<updateBusinessMutation, updateBusinessMutationVariables>;
+export const deleteBusinessDocument = gql`
+    mutation deleteBusiness($id: String!) {
+  deleteBusiness(id: $id) {
+    ...Business
+  }
+}
+    ${BusinessFragmentDoc}`;
+export type deleteBusinessMutationFn = Apollo.MutationFunction<deleteBusinessMutation, deleteBusinessMutationVariables>;
+
+/**
+ * __usedeleteBusinessMutation__
+ *
+ * To run a mutation, you first call `usedeleteBusinessMutation` within a React component and pass it any options that fit your needs.
+ * When your component renders, `usedeleteBusinessMutation` returns a tuple that includes:
+ * - A mutate function that you can call at any time to execute the mutation
+ * - An object with fields that represent the current status of the mutation's execution
+ *
+ * @param baseOptions options that will be passed into the mutation, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options-2;
+ *
+ * @example
+ * const [deleteBusinessMutation, { data, loading, error }] = usedeleteBusinessMutation({
+ *   variables: {
+ *      id: // value for 'id'
+ *   },
+ * });
+ */
+export function usedeleteBusinessMutation(baseOptions?: Apollo.MutationHookOptions<deleteBusinessMutation, deleteBusinessMutationVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useMutation<deleteBusinessMutation, deleteBusinessMutationVariables>(deleteBusinessDocument, options);
+      }
+export type deleteBusinessMutationHookResult = ReturnType<typeof usedeleteBusinessMutation>;
+export type deleteBusinessMutationResult = Apollo.MutationResult<deleteBusinessMutation>;
+export type deleteBusinessMutationOptions = Apollo.BaseMutationOptions<deleteBusinessMutation, deleteBusinessMutationVariables>;

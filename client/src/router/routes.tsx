@@ -3,6 +3,7 @@ import { PATHS } from "./paths";
 import { Layout } from "./components/Layout";
 import Home from "../pages/Home";
 import ManageBusinesses from "../pages/business/ManageBusinesses";
+import BusinessForm from "../pages/business/BusinessForm";
 
 export const routes: RouteObject[] = [
   {
@@ -15,6 +16,14 @@ export const routes: RouteObject[] = [
       {
         path: PATHS.BUSINESSES,
         element: <ManageBusinesses />,
+      },
+      {
+        path: `${PATHS.BUSINESSES}/create`,
+        element: <BusinessForm />,
+      },
+      {
+        path: `${PATHS.BUSINESSES}/:id`,
+        element: <BusinessForm />,
       },
     ],
   },

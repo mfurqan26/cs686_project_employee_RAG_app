@@ -2,6 +2,8 @@ import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
 import { BusinessService } from './business.service';
 import { Business } from './types/business.model';
 import { BusinessCreateInput } from './types/business-create.input';
+import { BusinessUpdateInput } from './types/business-update.input';
+
 @Resolver(() => Business)
 export class BusinessResolver {
   constructor(private readonly businessService: BusinessService) {}
@@ -22,5 +24,15 @@ export class BusinessResolver {
   @Mutation(() => Business)
   async createBusiness(@Args('data') data: BusinessCreateInput): Promise<Business> {
     return this.businessService.createBusiness(data);
+  }
+
+  @Mutation(() => Business)
+  async updateBusiness(@Args('data') data: BusinessUpdateInput): Promise<Business> {
+    return this.businessService.updateBusiness(data);
+  }
+
+  @Mutation(() => Business)
+  async deleteBusiness(@Args('id') id: string): Promise<Business> {
+    return this.businessService.deleteBusiness(id);
   }
 }

@@ -6,6 +6,7 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 import { theme } from "./theme/theme";
 import { apolloClient } from "./api/apollo-client";
 import { routes } from "./router/routes";
+import { SnackbarProvider } from "notistack";
 
 const router = createBrowserRouter(routes);
 
@@ -14,7 +15,13 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <ApolloProvider client={apolloClient}>
-        <RouterProvider router={router} />
+        <SnackbarProvider
+          maxSnack={3}
+          anchorOrigin={{ vertical: "top", horizontal: "center" }}
+          autoHideDuration={3000}
+        >
+          <RouterProvider router={router} />
+        </SnackbarProvider>
       </ApolloProvider>
     </ThemeProvider>
   </React.StrictMode>

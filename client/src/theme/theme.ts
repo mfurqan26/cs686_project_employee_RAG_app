@@ -16,9 +16,9 @@ export const theme = createTheme({
       dark: "#1565c0",
     },
     secondary: {
-      main: "#9c27b0",
-      light: "#ba68c8",
-      dark: "#7b1fa2",
+      main: "#3e3e3e",
+      light: "#6e6e6e",
+      dark: "#2e2e2e",
     },
   },
   components: {
@@ -48,6 +48,16 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           color: "#ffffff",
+        },
+      },
+    },
+    MuiListItem: {
+      styleOverrides: {
+        root: {
+          color: "#ffffff",
+          border: "1px solid #ffffff",
+          borderRadius: "30px",
+          marginBottom: "4px",
         },
       },
     },
