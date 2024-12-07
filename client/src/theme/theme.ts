@@ -20,6 +20,21 @@ export const theme = createTheme({
       light: "#6e6e6e",
       dark: "#3e3e3e",
     },
+    info: {
+      main: "#00bcd4",
+      light: "#62efff",
+      dark: "#008ba3",
+    },
+    warning: {
+      main: "#ff9800",
+      light: "#ffd180",
+      dark: "#b26a00",
+    },
+    error: {
+      main: "#f44336",
+      light: "#ff7961",
+      dark: "#ba000d",
+    },
   },
   components: {
     MuiAppBar: {

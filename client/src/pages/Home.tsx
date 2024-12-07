@@ -1,4 +1,4 @@
-import { Container, Typography, Button, Box } from "@mui/material";
+import { Typography, Button, Box } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import { PATHS } from "../router/paths";
 

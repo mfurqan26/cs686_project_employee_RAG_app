@@ -5,6 +5,7 @@ import { ConfigModule } from '@nestjs/config';
 import { PrismaModule } from 'nestjs-prisma';
 import { BusinessModule } from '../business/business.module';
 import { NAICSModule } from '../naics/naics.module';
+import { LLMModule } from '../llm/llm.module';
 import { join } from 'path';
 
 @Module({
@@ -21,6 +22,7 @@ import { join } from 'path';
     }),
     BusinessModule,
     NAICSModule,
+    LLMModule,
   ],
 })
 export class AppModule {}

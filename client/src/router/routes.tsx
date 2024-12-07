@@ -4,7 +4,7 @@ import { Layout } from "./components/Layout";
 import Home from "../pages/Home";
 import ManageBusinesses from "../pages/business/ManageBusinesses";
 import BusinessForm from "../pages/business/BusinessForm";
-
+import Suggestions from "../pages/suggestion/Suggestions";
 export const routes: RouteObject[] = [
   {
     element: <Layout />,
@@ -24,6 +24,10 @@ export const routes: RouteObject[] = [
       {
         path: `${PATHS.BUSINESSES}/:id`,
         element: <BusinessForm />,
+      },
+      {
+        path: PATHS.SUGGESTIONS,
+        element: <Suggestions />,
       },
     ],
   },

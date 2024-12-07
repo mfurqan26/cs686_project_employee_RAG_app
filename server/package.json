@@ -20,6 +20,8 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@langchain/core": "^0.3.22",
+    "@langchain/openai": "^0.3.14",
     "@nestjs/apollo": "^12.2.1",
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.3.0",
@@ -31,6 +33,7 @@
     "class-validator": "^0.14.1",
     "fast-csv": "^5.0.2",
     "graphql": "^16.9.0",
+    "langchain": "^0.3.6",
     "nestjs-prisma": "^0.23.0",
     "prisma": "^5.22.0",
     "reflect-metadata": "^0.2.0",

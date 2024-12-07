@@ -1,7 +1,7 @@
 export const PATHS = {
   HOME: "/",
   BUSINESSES: "/businesses",
-  NAICS: "/naics",
+  SUGGESTIONS: "/suggestions",
 } as const;
 
 export type PathsType = typeof PATHS;
