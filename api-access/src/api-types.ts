@@ -15,6 +15,7 @@ export type Scalars = {
   Boolean: { input: boolean; output: boolean; }
   Int: { input: number; output: number; }
   Float: { input: number; output: number; }
+  /** A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format. */
   DateTime: { input: any; output: any; }
 };
 
@@ -22,6 +23,7 @@ export type Business = {
   NAICSId: Maybe<Scalars['Int']['output']>;
   createdAt: Scalars['DateTime']['output'];
   id: Scalars['ID']['output'];
+  naics: Maybe<NAICS>;
   name: Scalars['String']['output'];
   updatedAt: Scalars['DateTime']['output'];
 };
@@ -62,7 +64,7 @@ export type MutationupdateBusinessArgs = {
 export type NAICS = {
   Business: Maybe<Array<Business>>;
   NAICSDescriptor: Maybe<Array<NAICSDescriptor>>;
-  code: Scalars['ID']['output'];
+  code: Scalars['Float']['output'];
   createdAt: Scalars['DateTime']['output'];
   name: Scalars['String']['output'];
   updatedAt: Scalars['DateTime']['output'];
@@ -112,7 +114,7 @@ export type BusinessFragment = { __typename: 'Business', id: string, createdAt: 
 
 export type NAICSDescriptorFragment = { __typename: 'NAICSDescriptor', naicsId: number, content: string, category: Array<NAICSDescriptorCategory> };
 
-export type NAICSFragment = { __typename: 'NAICS', code: string, name: string, createdAt: any, updatedAt: any };
+export type NAICSFragment = { __typename: 'NAICS', code: number, name: string, createdAt: any, updatedAt: any };
 
 export type GetBusinessesQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -141,14 +143,14 @@ export type createBusinessMutation = { createBusiness: { __typename: 'Business',
 export type naicsListQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type naicsListQuery = { naicsList: Array<{ __typename: 'NAICS', code: string, name: string, createdAt: any, updatedAt: any, NAICSDescriptor: Array<{ __typename: 'NAICSDescriptor', naicsId: number, content: string, category: Array<NAICSDescriptorCategory> }> | null }> };
+export type naicsListQuery = { naicsList: Array<{ __typename: 'NAICS', code: number, name: string, createdAt: any, updatedAt: any, NAICSDescriptor: Array<{ __typename: 'NAICSDescriptor', naicsId: number, content: string, category: Array<NAICSDescriptorCategory> }> | null }> };
 
 export type naicsQueryVariables = Exact<{
   code: Scalars['Int']['input'];
 }>;
 
 
-export type naicsQuery = { naics: { __typename: 'NAICS', code: string, name: string, createdAt: any, updatedAt: any, NAICSDescriptor: Array<{ __typename: 'NAICSDescriptor', naicsId: number, content: string, category: Array<NAICSDescriptorCategory> }> | null } | null };
+export type naicsQuery = { naics: { __typename: 'NAICS', code: number, name: string, createdAt: any, updatedAt: any, NAICSDescriptor: Array<{ __typename: 'NAICSDescriptor', naicsId: number, content: string, category: Array<NAICSDescriptorCategory> }> | null } | null };
 
 export type naicsExistsQueryVariables = Exact<{
   code: Scalars['Int']['input'];

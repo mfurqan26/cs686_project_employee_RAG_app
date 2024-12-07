@@ -8,16 +8,16 @@ export class NAICSResolver {
 
   @Query(() => [NAICS])
   async naicsList() {
-    return this.naicsService.findAll();
+    return this.naicsService.naicsList();
   }
 
   @Query(() => NAICS, { nullable: true })
   async naics(@Args('code', { type: () => Int }) code: number) {
-    return this.naicsService.findByCode(code);
+    return this.naicsService.naic(code);
   }
 
   @Query(() => Boolean)
   async naicsExists(@Args('code', { type: () => Int }) code: number) {
-    return this.naicsService.exists(code);
+    return this.naicsService.naicsExists(code);
   }
 }

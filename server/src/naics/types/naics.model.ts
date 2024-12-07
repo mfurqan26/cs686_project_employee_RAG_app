@@ -1,10 +1,10 @@
-import { ObjectType, Field, ID } from '@nestjs/graphql';
+import { ObjectType, Field } from '@nestjs/graphql';
 import { Business } from '../../business/types/business.model';
 import { NAICSDescriptor } from './naics-descriptor.model';
 
 @ObjectType()
 export class NAICS {
-  @Field(() => ID)
+  @Field(() => Number)
   code: number;
 
   @Field()

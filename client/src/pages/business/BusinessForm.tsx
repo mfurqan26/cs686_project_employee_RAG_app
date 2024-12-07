@@ -5,8 +5,16 @@ import {
   usebusinessQuery,
   useupdateBusinessMutation,
   usedeleteBusinessMutation,
+  usenaicsListQuery,
 } from "api-access";
-import { Typography, TextField, Button, Box, Paper } from "@mui/material";
+import {
+  Typography,
+  TextField,
+  Button,
+  Box,
+  Paper,
+  Autocomplete,
+} from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useSnackbar } from "notistack";
 
@@ -14,52 +22,64 @@ export function BusinessForm() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [name, setName] = useState("");
+  const [selectedNaics, setSelectedNaics] = useState<number | null>(null);
   const { enqueueSnackbar } = useSnackbar();
 
+  const { data: naicsData } = usenaicsListQuery();
   const { data: businessData } = usebusinessQuery({
     variables: { id: id! },
     skip: !id,
   });
 
   const [createBusiness] = usecreateBusinessMutation({
-    refetchQueries: ["GetBusinesses"],
+    refetchQueries: ["businesses"],
   });
 
   const [updateBusiness] = useupdateBusinessMutation({
-    refetchQueries: ["GetBusinesses"],
+    refetchQueries: ["businesses"],
   });
 
   const [deleteBusiness] = usedeleteBusinessMutation({
-    refetchQueries: ["GetBusinesses"],
+    refetchQueries: ["businesses"],
   });
 
   useEffect(() => {
     if (businessData?.business) {
       setName(businessData.business.name);
+      const naicsCode = businessData.business.NAICSId;
+      if (naicsCode && naicsData?.naicsList) {
+        const naicsMatch = naicsData.naicsList.find(
+          (n) => n.code === naicsCode
+        );
+        if (naicsMatch) {
+          setSelectedNaics(naicsMatch.code);
+        }
+      }
     }
-  }, [businessData]);
+  }, [businessData, naicsData]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
+      const businessData = {
+        name,
+        ...(selectedNaics && { naicsId: selectedNaics }),
+      };
+
       if (id) {
         await updateBusiness({
           variables: {
-            data: { name, id },
+            data: { ...businessData, id },
           },
         });
-        enqueueSnackbar(`${name} updated successfully`, {
-          variant: "success",
-        });
+        enqueueSnackbar(`${name} updated successfully`, { variant: "success" });
       } else {
         await createBusiness({
           variables: {
-            data: { name },
+            data: businessData,
           },
         });
-        enqueueSnackbar(`${name} created successfully`, {
-          variant: "success",
-        });
+        enqueueSnackbar(`${name} created successfully`, { variant: "success" });
       }
       navigate("/businesses");
     } catch (error) {
@@ -119,6 +139,18 @@ export function BusinessForm() {
             fullWidth
             required
             sx={{ mb: 3 }}
+          />
+          <Autocomplete
+            options={naicsData?.naicsList || []}
+            getOptionLabel={(option) => `${option.code} - ${option.name}`}
+            value={
+              naicsData?.naicsList.find((n) => n.code === selectedNaics) || null
+            }
+            onChange={(_, newValue) => setSelectedNaics(newValue?.code ?? null)}
+            renderInput={(params) => (
+              <TextField {...params} label="NAICS Code" sx={{ mb: 3 }} />
+            )}
+            isOptionEqualToValue={(option, value) => option.code === value.code}
           />
           <Box sx={{ display: "flex", justifyContent: "space-between" }}>
             {id && (

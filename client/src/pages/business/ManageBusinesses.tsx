@@ -1,13 +1,16 @@
-import { useState } from "react";
-import { useGetBusinessesQuery } from "api-access";
+import { usebusinessesQuery, usenaicsListQuery } from "api-access";
 import { Typography, CircularProgress, Box, Button } from "@mui/material";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
-import { BusinessForm } from "./BusinessForm";
 import AddIcon from "@mui/icons-material/Add";
 import { useNavigate } from "react-router-dom";
 
 function ManageBusinesses() {
-  const { loading, error, data } = useGetBusinessesQuery();
+  const { loading, error, data } = usebusinessesQuery();
+  const {
+    loading: naicsLoading,
+    error: naicsError,
+    data: naicsData,
+  } = usenaicsListQuery();
   const pageSize = 5;
   const pageSizeOptions = [5, 10, 25];
   const navigate = useNavigate();
@@ -20,7 +23,17 @@ function ManageBusinesses() {
       flex: 1,
       valueFormatter: (params) => new Date(params).toLocaleDateString(),
     },
-    { field: "NAICSId", headerName: "NAICS ID", flex: 1 },
+    {
+      field: "NAICS",
+      headerName: "NAICS",
+      flex: 1,
+      renderCell: (params) => {
+        const naics = naicsData?.naicsList.find(
+          (naics) => naics.code === params.row.NAICSId
+        );
+        return `${naics?.code} - ${naics?.name}`;
+      },
+    },
     {
       field: "actions",
       headerName: "Actions",
@@ -38,7 +51,7 @@ function ManageBusinesses() {
     },
   ];
 
-  if (loading) {
+  if (loading || naicsLoading) {
     return (
       <Box
         display="flex"

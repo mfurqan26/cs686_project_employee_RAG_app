@@ -15,7 +15,7 @@
     {
       "label": "Watch API Queries",
       "type": "shell",
-      "command": "Start-Sleep -Seconds 5; cd api-access; npx graphql-codegen --watch --config codegen.ts",
+      "command": "Start-Sleep -Seconds 5; cd api-access; npx graphql-codegen --watch --config codegen.ts --verbose",
       "group": "none",
       "isBackground": true,
       "presentation": {

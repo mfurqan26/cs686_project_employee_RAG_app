@@ -6,6 +6,7 @@ type Business {
   NAICSId: Int
   createdAt: DateTime!
   id: ID!
+  naics: NAICS
   name: String!
   updatedAt: DateTime!
 }
@@ -36,7 +37,7 @@ type Mutation {
 type NAICS {
   Business: [Business!]
   NAICSDescriptor: [NAICSDescriptor!]
-  code: ID!
+  code: Float!
   createdAt: DateTime!
   name: String!
   updatedAt: DateTime!

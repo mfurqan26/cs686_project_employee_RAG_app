@@ -8,7 +8,7 @@ export class BusinessService {
   constructor(private prisma: PrismaService) {}
 
   async businesses() {
-    return this.prisma.business.findMany();
+    return this.prisma.business.findMany({});
   }
 
   async business(id: string) {
@@ -23,20 +23,39 @@ export class BusinessService {
   }
 
   async createBusiness(data: BusinessCreateInput) {
+    const { naicsId, ...rest } = data;
     return this.prisma.business.create({
-      data,
+      data: {
+        ...rest,
+        ...(naicsId && {
+          naics: {
+            connect: {
+              code: naicsId,
+            },
+          },
+        }),
+      },
     });
   }
 
   async updateBusiness(data: BusinessUpdateInput) {
-    // Check if business exists
-    const businessExists = await this.business(data.id);
+    const { id, naicsId, ...rest } = data;
+    const businessExists = await this.business(id);
     if (!businessExists) {
       throw new Error('Business not found');
     }
     return this.prisma.business.update({
-      where: { id: data.id },
-      data,
+      where: { id },
+      data: {
+        ...rest,
+        ...(naicsId && {
+          naics: {
+            connect: {
+              code: naicsId,
+            },
+          },
+        }),
+      },
     });
   }
 
