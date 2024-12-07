@@ -27,7 +27,7 @@ export type Business = {
 };
 
 export type BusinessCreateInput = {
-  id: Scalars['String']['input'];
+  id?: InputMaybe<Scalars['ID']['input']>;
   naicsId?: InputMaybe<Scalars['Int']['input']>;
   name: Scalars['String']['input'];
 };

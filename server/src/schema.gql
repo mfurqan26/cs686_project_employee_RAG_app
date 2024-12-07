@@ -11,7 +11,7 @@ type Business {
 }
 
 input BusinessCreateInput {
-  id: String!
+  id: ID
   naicsId: Int
   name: String!
 }
