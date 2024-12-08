@@ -65,8 +65,31 @@ docker-compose up -d
 4. Create a `.env` file in the server directory:
 
 ```
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432 employee_suggestion_db"
-OPENAI_API_KEY="your-openai-api-key"
+# Environment variables
+# POSTGRES
+POSTGRES_USER=postgresUser
+POSTGRES_PASSWORD=postgresPassword
+POSTGRES_DB=postgresDb
+
+# Nest run locally
+DB_HOST=localhost
+# Nest run in docker, change host to database container name
+# DB_HOST=postgres
+DB_PORT=5432
+DB_SCHEMA=public
+
+# Prisma database connection
+DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:${DB_PORT}/${POSTGRES_DB}?schema=${DB_SCHEMA}&sslmode=prefer
+
+# Nest
+API_PORT=3033
+
+# Security
+JWT_ACCESS_SECRET=nestjsPrismaAccessSecret
+JWT_REFRESH_SECRET=nestjsPrismaRefreshSecret
+
+# OpenAI
+OPENAI_API_KEY="Your OPENAI API KEY"
 ```
 
 5. Using VS Code Run Tasks (Recommended):
