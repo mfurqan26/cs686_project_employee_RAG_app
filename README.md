@@ -27,6 +27,7 @@ This full-stack application that uses AI to suggest employee roles and their wag
 
 ## Project Structure
 
+```
 project-root/
 ├── server/ # NestJS backend
 │ ├── src/
@@ -38,6 +39,7 @@ project-root/
 │ └── src/
 │ └── pages/ # React components
 └── api-access/ # Shared GraphQL types
+```
 
 ## Setup Instructions
 
