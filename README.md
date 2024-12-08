@@ -51,7 +51,8 @@ project-root/
 ├── client/ # React frontend
 │ └── src/
 │ ├── pages/ # React components and pages
-│ └── components/ # Shared React components
+│ └── router/ # React Router and nav component
+│ └── theme/ # Theme for styling our website and components
 └── api-access/ # Shared GraphQL types and queries
 ```
 
