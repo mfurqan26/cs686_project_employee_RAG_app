@@ -120,9 +120,7 @@ OPENAI_API_KEY="Your OPENAI API KEY"
 
 ## Features
 
-- Business profile creation and management
+- Business creation with NAICS codes and management
 - AI-powered employee role suggestions based on NAICS codes
 - Wage information from Canadian labor market data
 - Interactive data grid for viewing suggestions
-- Multi-level NOC code selection process
-- Real-time updates and status tracking
