@@ -29,16 +29,21 @@ This full-stack application that uses AI to suggest employee roles and their wag
 
 ```
 project-root/
+├── .vscode/ # VS Code configuration and tasks
 ├── server/ # NestJS backend
 │ ├── src/
-│ │ ├── llm/ # AI/LLM integration
-│ │ ├── business/ # Business logic
-│ │ └── data/ # CSV data files
-│ └── prisma/ # Database schema
+│ │ ├── app/ # App module and configuration
+│ │ ├── business/ # Business logic and GraphQL types
+│ │ ├── llm/ # AI/LLM integration with OpenAI
+│ │ ├── naics/ # NAICS module for industry codes
+│ │ └── data/ # CSV data files for seeding
+│ ├── prisma/ # Database schema and migrations
+│ └── lib/ # Utility functions and data imports
 ├── client/ # React frontend
 │ └── src/
-│ └── pages/ # React components
-└── api-access/ # Shared GraphQL types
+│ ├── pages/ # React components and pages
+│ └── components/ # Shared React components
+└── api-access/ # Shared GraphQL types and queries
 ```
 
 ## Setup Instructions
