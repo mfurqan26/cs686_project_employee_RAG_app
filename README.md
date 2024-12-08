@@ -2,6 +2,8 @@
 
 This full-stack application that uses AI to suggest employee roles and their wage information based on business type and industry classification. The application uses NOC (National Occupational Classification) and NAICS (North American Industry Classification System) data to provide suggestions for hiring employees for your business.
 
+![alt text](app_suggestion_page.png)
+
 ## Technology Stack
 
 ### Backend
