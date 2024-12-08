@@ -21,9 +21,9 @@ This full-stack application that uses AI to suggest employee roles and their wag
 
 ## Prerequisites
 
-- Node.js (v16 or higher)
+- Node.js (v20 or higher)
 - Docker Desktop
-- npm or yarn package manager
+- npm package manager
 
 ## Project Structure
 
