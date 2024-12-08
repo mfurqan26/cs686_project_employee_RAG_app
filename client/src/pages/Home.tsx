@@ -17,6 +17,14 @@ function Home() {
         >
           View Businesses
         </Button>
+        <Button
+          component={RouterLink}
+          to={PATHS.SUGGESTIONS}
+          variant="contained"
+          sx={{ mr: 2 }}
+        >
+          View Suggestions
+        </Button>
       </Box>
     </>
   );
