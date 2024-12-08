@@ -114,6 +114,10 @@ OPENAI_API_KEY="Your OPENAI API KEY"
    - Select "Prisma Generate & Push & Seed"
    - After completion, select run task "Run Dev Environment"
 
+## Viewing the Client
+
+After running the Dev enviroment succesfully, you can view the webpage on `http://localhost:4203/`
+
 ## Available VS Code Tasks
 
 - **Prisma Generate & Push & Seed**: Sets up database schema and loads initial data
