@@ -92,7 +92,8 @@ model BusinessEmployee {
   wage_median Float?
   wage_high   Float?
   wage_avg    Float?
-  data_source String
+  data_source String?
+  ref_period  String?
   is_annual   Boolean
   wage_comment String?
 

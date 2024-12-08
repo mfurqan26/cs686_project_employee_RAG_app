@@ -189,7 +189,7 @@ function Suggestions() {
       },
     },
     {
-      field: "wage_average",
+      field: "wage_avg",
       headerName: "Average Wage",
       flex: 1,
       renderCell: (params) => {
@@ -201,6 +201,7 @@ function Suggestions() {
       },
     },
     { field: "data_source", headerName: "Data Source", flex: 1 },
+    { field: "ref_period", headerName: "Data Reference", flex: 1 },
     {
       field: "nocDefinition",
       headerName: "Job Description",
@@ -268,7 +269,9 @@ function Suggestions() {
         <Box
           sx={{ display: "flex", gap: 2, alignItems: "center", width: "50%" }}
         >
-          <Typography variant="h5">{`Industry: ${selectedNaics?.naics?.name}`}</Typography>
+          <Typography variant="h5">{`Industry: ${
+            selectedNaics?.naics?.name ?? ""
+          }`}</Typography>
         </Box>
       </Box>
       <Button

@@ -99,6 +99,7 @@ export async function generateEmployeeSuggestion(
       wage_high: wage.wage_high,
       wage_avg: wage.wage_avg,
       data_source: wage.Data_Source_E,
+      ref_period: wage.ref_period,
       is_annual: wage.is_annual === 1 ? true : false,
       wage_comment: wage.wage_comment,
     }));

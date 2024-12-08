@@ -74,6 +74,9 @@ export class BusinessService {
   async businessEmployees(businessId: string) {
     return this.prisma.businessEmployee.findMany({
       where: { businessId },
+      include: {
+        NOC: true,
+      },
     });
   }
 }

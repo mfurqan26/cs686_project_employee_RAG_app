@@ -18,13 +18,15 @@ input BusinessCreateInput {
 }
 
 type BusinessEmployee {
+  NOC: NOC!
   businessId: String!
   createdAt: DateTime!
-  data_source: String!
+  data_source: String
   headcount: Int
   id: ID!
   is_annual: Boolean!
   noc_code: String!
+  ref_period: String
   updatedAt: DateTime!
   wage_avg: Float
   wage_comment: String
@@ -101,6 +103,12 @@ enum NAICSDescriptorCategory {
   EXCLUSION
   ILLUSTRATIVE_EXAMPLE
   INCLUSION
+}
+
+type NOC {
+  code: String!
+  definition: String!
+  title: String!
 }
 
 type Query {

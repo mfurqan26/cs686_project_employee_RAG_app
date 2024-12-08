@@ -35,13 +35,15 @@ export type BusinessCreateInput = {
 };
 
 export type BusinessEmployee = {
+  NOC: NOC;
   businessId: Scalars['String']['output'];
   createdAt: Scalars['DateTime']['output'];
-  data_source: Scalars['String']['output'];
+  data_source: Maybe<Scalars['String']['output']>;
   headcount: Maybe<Scalars['Int']['output']>;
   id: Scalars['ID']['output'];
   is_annual: Scalars['Boolean']['output'];
   noc_code: Scalars['String']['output'];
+  ref_period: Maybe<Scalars['String']['output']>;
   updatedAt: Scalars['DateTime']['output'];
   wage_avg: Maybe<Scalars['Float']['output']>;
   wage_comment: Maybe<Scalars['String']['output']>;
@@ -135,6 +137,12 @@ export enum NAICSDescriptorCategory {
   INCLUSION = 'INCLUSION'
 }
 
+export type NOC = {
+  code: Scalars['String']['output'];
+  definition: Scalars['String']['output'];
+  title: Scalars['String']['output'];
+};
+
 export type Query = {
   business: Maybe<Business>;
   businessEmployees: Array<BusinessEmployee>;
@@ -187,7 +195,9 @@ export type NAICSFragment = { __typename: 'NAICS', code: number, name: string, c
 
 export type LLMRecordFragment = { __typename: 'LLMRecord', id: string, createdAt: any, updatedAt: any, runStatus: RunStatus, content: string, modelName: string, temperature: number, generateType: GenerateType, businessId: string };
 
-export type BusinessEmployeeFragment = { __typename: 'BusinessEmployee', id: string, createdAt: any, updatedAt: any, noc_code: string, businessId: string, headcount: number | null, wage_low: number | null, wage_median: number | null, wage_high: number | null, wage_avg: number | null, data_source: string, is_annual: boolean, wage_comment: string | null };
+export type NOCFragment = { __typename: 'NOC', code: string, title: string, definition: string };
+
+export type BusinessEmployeeFragment = { __typename: 'BusinessEmployee', id: string, createdAt: any, updatedAt: any, noc_code: string, businessId: string, headcount: number | null, wage_low: number | null, wage_median: number | null, wage_high: number | null, wage_avg: number | null, data_source: string | null, ref_period: string | null, is_annual: boolean, wage_comment: string | null, NOC: { __typename: 'NOC', code: string, title: string, definition: string } };
 
 export type GetBusinessesQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -265,7 +275,7 @@ export type businessEmployeesQueryVariables = Exact<{
 }>;
 
 
-export type businessEmployeesQuery = { businessEmployees: Array<{ __typename: 'BusinessEmployee', id: string, createdAt: any, updatedAt: any, noc_code: string, businessId: string, headcount: number | null, wage_low: number | null, wage_median: number | null, wage_high: number | null, wage_avg: number | null, data_source: string, is_annual: boolean, wage_comment: string | null }> };
+export type businessEmployeesQuery = { businessEmployees: Array<{ __typename: 'BusinessEmployee', id: string, createdAt: any, updatedAt: any, noc_code: string, businessId: string, headcount: number | null, wage_low: number | null, wage_median: number | null, wage_high: number | null, wage_avg: number | null, data_source: string | null, ref_period: string | null, is_annual: boolean, wage_comment: string | null, NOC: { __typename: 'NOC', code: string, title: string, definition: string } }> };
 
 export const BusinessFieldsFragmentDoc = gql`
     fragment BusinessFields on Business {
@@ -312,12 +322,22 @@ export const LLMRecordFragmentDoc = gql`
   businessId
 }
     `;
+export const NOCFragmentDoc = gql`
+    fragment NOC on NOC {
+  code
+  title
+  definition
+}
+    `;
 export const BusinessEmployeeFragmentDoc = gql`
     fragment BusinessEmployee on BusinessEmployee {
   id
   createdAt
   updatedAt
   noc_code
+  NOC {
+    ...NOC
+  }
   businessId
   headcount
   wage_low
@@ -325,10 +345,11 @@ export const BusinessEmployeeFragmentDoc = gql`
   wage_high
   wage_avg
   data_source
+  ref_period
   is_annual
   wage_comment
 }
-    `;
+    ${NOCFragmentDoc}`;
 export const GetBusinessesDocument = gql`
     query GetBusinesses {
   businesses {

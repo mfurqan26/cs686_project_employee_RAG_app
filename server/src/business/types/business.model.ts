@@ -22,6 +22,18 @@ export class Business {
 }
 
 @ObjectType()
+export class NOC {
+  @Field()
+  code: string;
+
+  @Field()
+  title: string;
+
+  @Field()
+  definition: string;
+}
+
+@ObjectType()
 export class BusinessEmployee {
   @Field(() => ID)
   id: string;
@@ -34,6 +46,9 @@ export class BusinessEmployee {
 
   @Field()
   noc_code: string;
+
+  @Field(() => NOC)
+  NOC: NOC;
 
   @Field()
   businessId: string;
@@ -53,8 +68,11 @@ export class BusinessEmployee {
   @Field(() => Float, { nullable: true })
   wage_avg?: number;
 
-  @Field()
-  data_source: string;
+  @Field({ nullable: true })
+  data_source?: string;
+
+  @Field({ nullable: true })
+  ref_period?: string;
 
   @Field()
   is_annual: boolean;

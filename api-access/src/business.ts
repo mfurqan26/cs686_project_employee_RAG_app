@@ -10,12 +10,24 @@ export const BUSINESS_FIELDS = gql`
   }
 `;
 
+export const NOC_FIELDS = gql`
+  fragment NOC on NOC {
+    code
+    title
+    definition
+  }
+`;
+
 export const BUSINESS_EMPLOYEE_FIELDS = gql`
+  ${NOC_FIELDS}
   fragment BusinessEmployee on BusinessEmployee {
     id
     createdAt
     updatedAt
     noc_code
+    NOC {
+      ...NOC
+    }
     businessId
     headcount
     wage_low
@@ -23,6 +35,7 @@ export const BUSINESS_EMPLOYEE_FIELDS = gql`
     wage_high
     wage_avg
     data_source
+    ref_period
     is_annual
     wage_comment
   }
