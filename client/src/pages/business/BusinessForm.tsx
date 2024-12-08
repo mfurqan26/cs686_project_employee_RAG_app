@@ -60,10 +60,22 @@ export function BusinessForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Validate required fields
+    if (!name.trim()) {
+      enqueueSnackbar("Business name is required", { variant: "error" });
+      return;
+    }
+
+    if (!selectedNaics) {
+      enqueueSnackbar("Please select a NAICS code", { variant: "error" });
+      return;
+    }
+
     try {
       const businessData = {
         name,
-        ...(selectedNaics && { naicsId: selectedNaics }),
+        naicsId: selectedNaics,
       };
 
       if (id) {
@@ -86,9 +98,7 @@ export function BusinessForm() {
       console.error(`Error saving ${name}:`, error);
       enqueueSnackbar(
         error instanceof Error ? error.message : "An error occurred",
-        {
-          variant: "error",
-        }
+        { variant: "error" }
       );
     }
   };
@@ -148,7 +158,12 @@ export function BusinessForm() {
             }
             onChange={(_, newValue) => setSelectedNaics(newValue?.code ?? null)}
             renderInput={(params) => (
-              <TextField {...params} label="NAICS Code" sx={{ mb: 3 }} />
+              <TextField
+                {...params}
+                label="NAICS Code"
+                sx={{ mb: 3 }}
+                required
+              />
             )}
             isOptionEqualToValue={(option, value) => option.code === value.code}
           />
