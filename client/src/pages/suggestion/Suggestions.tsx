@@ -37,6 +37,20 @@ interface OutputContentType {
   reasoning: string;
 }
 
+const MultiLineCell = ({ value }: { value: string }) => (
+  <Box
+    sx={{
+      whiteSpace: "normal",
+      lineHeight: "1.2em",
+      py: 1,
+      maxHeight: "100%",
+      overflow: "auto",
+    }}
+  >
+    {value}
+  </Box>
+);
+
 function Suggestions() {
   const [selectedBusinessId, setSelectedBusinessId] = useState<string | null>(
     null
@@ -149,8 +163,10 @@ function Suggestions() {
     {
       field: "nocTitle",
       headerName: "Job Title",
-      flex: 2,
-      renderCell: (params) => params.row?.NOC?.title ?? "",
+      flex: 1,
+      renderCell: (params) => (
+        <MultiLineCell value={params.row?.NOC?.title ?? ""} />
+      ),
     },
     {
       field: "wage_low",
@@ -206,7 +222,10 @@ function Suggestions() {
       field: "nocDefinition",
       headerName: "Job Description",
       flex: 2,
-      renderCell: (params) => params.row?.NOC?.definition ?? "",
+      minWidth: 300,
+      renderCell: (params) => (
+        <MultiLineCell value={params.row?.NOC?.definition ?? ""} />
+      ),
     },
   ];
 
@@ -234,6 +253,12 @@ function Suggestions() {
                 pagination: { paginationModel: { pageSize: 10 } },
               }}
               disableRowSelectionOnClick
+              getRowHeight={() => "auto"}
+              sx={{
+                "& .MuiDataGrid-cell": {
+                  maxHeight: "none !important",
+                },
+              }}
             />
           </Box>
         ) : (
