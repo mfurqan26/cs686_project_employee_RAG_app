@@ -17,6 +17,22 @@ input BusinessCreateInput {
   name: String!
 }
 
+type BusinessEmployee {
+  businessId: String!
+  createdAt: DateTime!
+  data_source: String!
+  headcount: Int
+  id: ID!
+  is_annual: Boolean!
+  noc_code: String!
+  updatedAt: DateTime!
+  wage_avg: Float
+  wage_comment: String
+  wage_high: Float
+  wage_low: Float
+  wage_median: Float
+}
+
 input BusinessUpdateInput {
   id: ID!
   naicsId: Float
@@ -89,6 +105,7 @@ enum NAICSDescriptorCategory {
 
 type Query {
   business(id: String!): Business
+  businessEmployees(businessId: String!): [BusinessEmployee!]!
   businesses: [Business!]!
   llmRecords(businessId: String!): [LLMRecord!]!
   naics(code: Int!): NAICS

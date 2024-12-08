@@ -70,4 +70,10 @@ export class BusinessService {
       where: { id },
     });
   }
+
+  async businessEmployees(businessId: string) {
+    return this.prisma.businessEmployee.findMany({
+      where: { businessId },
+    });
+  }
 }

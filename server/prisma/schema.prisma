@@ -17,6 +17,7 @@ model Business {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   llmRecords  LLMRecord[]
+  employees   BusinessEmployee[]
 }
 
 model NAICS {
@@ -51,6 +52,7 @@ model NOC {
   level      Int
   title      String
   definition String
+  employees  BusinessEmployee[]
 }
 
 enum RunStatus {
@@ -75,4 +77,25 @@ model LLMRecord {
   generateType GenerateType
   businessId   String
   business     Business    @relation(fields: [businessId], references: [id])
+}
+
+model BusinessEmployee {
+  id          String    @id @default(cuid())
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  noc_code    String
+  NOC         NOC       @relation(fields: [noc_code], references: [code])
+  businessId  String
+  Business    Business  @relation(fields: [businessId], references: [id])
+  headcount   Int?
+  wage_low    Float?
+  wage_median Float?
+  wage_high   Float?
+  wage_avg    Float?
+  data_source String
+  is_annual   Boolean
+  wage_comment String?
+
+
+  @@unique([businessId, noc_code])
 }

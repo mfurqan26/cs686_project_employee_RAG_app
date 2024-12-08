@@ -10,6 +10,24 @@ export const BUSINESS_FIELDS = gql`
   }
 `;
 
+export const BUSINESS_EMPLOYEE_FIELDS = gql`
+  fragment BusinessEmployee on BusinessEmployee {
+    id
+    createdAt
+    updatedAt
+    noc_code
+    businessId
+    headcount
+    wage_low
+    wage_median
+    wage_high
+    wage_avg
+    data_source
+    is_annual
+    wage_comment
+  }
+`;
+
 export const BUSINESSES_GQL = gql`
   ${BUSINESS_FIELDS}
   query businesses {
@@ -51,6 +69,15 @@ export const DELETE_BUSINESS_GQL = gql`
   mutation deleteBusiness($id: String!) {
     deleteBusiness(id: $id) {
       ...Business
+    }
+  }
+`;
+
+export const BUSINESS_EMPLOYEES_GQL = gql`
+  ${BUSINESS_EMPLOYEE_FIELDS}
+  query businessEmployees($businessId: String!) {
+    businessEmployees(businessId: $businessId) {
+      ...BusinessEmployee
     }
   }
 `;

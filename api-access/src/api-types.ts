@@ -34,6 +34,22 @@ export type BusinessCreateInput = {
   name: Scalars['String']['input'];
 };
 
+export type BusinessEmployee = {
+  businessId: Scalars['String']['output'];
+  createdAt: Scalars['DateTime']['output'];
+  data_source: Scalars['String']['output'];
+  headcount: Maybe<Scalars['Int']['output']>;
+  id: Scalars['ID']['output'];
+  is_annual: Scalars['Boolean']['output'];
+  noc_code: Scalars['String']['output'];
+  updatedAt: Scalars['DateTime']['output'];
+  wage_avg: Maybe<Scalars['Float']['output']>;
+  wage_comment: Maybe<Scalars['String']['output']>;
+  wage_high: Maybe<Scalars['Float']['output']>;
+  wage_low: Maybe<Scalars['Float']['output']>;
+  wage_median: Maybe<Scalars['Float']['output']>;
+};
+
 export type BusinessUpdateInput = {
   id: Scalars['ID']['input'];
   naicsId?: InputMaybe<Scalars['Float']['input']>;
@@ -121,6 +137,7 @@ export enum NAICSDescriptorCategory {
 
 export type Query = {
   business: Maybe<Business>;
+  businessEmployees: Array<BusinessEmployee>;
   businesses: Array<Business>;
   llmRecords: Array<LLMRecord>;
   naics: Maybe<NAICS>;
@@ -131,6 +148,11 @@ export type Query = {
 
 export type QuerybusinessArgs = {
   id: Scalars['String']['input'];
+};
+
+
+export type QuerybusinessEmployeesArgs = {
+  businessId: Scalars['String']['input'];
 };
 
 
@@ -164,6 +186,8 @@ export type NAICSDescriptorFragment = { __typename: 'NAICSDescriptor', naicsId: 
 export type NAICSFragment = { __typename: 'NAICS', code: number, name: string, createdAt: any, updatedAt: any };
 
 export type LLMRecordFragment = { __typename: 'LLMRecord', id: string, createdAt: any, updatedAt: any, runStatus: RunStatus, content: string, modelName: string, temperature: number, generateType: GenerateType, businessId: string };
+
+export type BusinessEmployeeFragment = { __typename: 'BusinessEmployee', id: string, createdAt: any, updatedAt: any, noc_code: string, businessId: string, headcount: number | null, wage_low: number | null, wage_median: number | null, wage_high: number | null, wage_avg: number | null, data_source: string, is_annual: boolean, wage_comment: string | null };
 
 export type GetBusinessesQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -236,6 +260,13 @@ export type generateRunLLMMutationVariables = Exact<{
 
 export type generateRunLLMMutation = { generateRunLLM: { __typename: 'LLMRecord', id: string, createdAt: any, updatedAt: any, runStatus: RunStatus, content: string, modelName: string, temperature: number, generateType: GenerateType, businessId: string } };
 
+export type businessEmployeesQueryVariables = Exact<{
+  businessId: Scalars['String']['input'];
+}>;
+
+
+export type businessEmployeesQuery = { businessEmployees: Array<{ __typename: 'BusinessEmployee', id: string, createdAt: any, updatedAt: any, noc_code: string, businessId: string, headcount: number | null, wage_low: number | null, wage_median: number | null, wage_high: number | null, wage_avg: number | null, data_source: string, is_annual: boolean, wage_comment: string | null }> };
+
 export const BusinessFieldsFragmentDoc = gql`
     fragment BusinessFields on Business {
   id
@@ -279,6 +310,23 @@ export const LLMRecordFragmentDoc = gql`
   temperature
   generateType
   businessId
+}
+    `;
+export const BusinessEmployeeFragmentDoc = gql`
+    fragment BusinessEmployee on BusinessEmployee {
+  id
+  createdAt
+  updatedAt
+  noc_code
+  businessId
+  headcount
+  wage_low
+  wage_median
+  wage_high
+  wage_avg
+  data_source
+  is_annual
+  wage_comment
 }
     `;
 export const GetBusinessesDocument = gql`
@@ -696,3 +744,43 @@ export function usegenerateRunLLMMutation(baseOptions?: Apollo.MutationHookOptio
 export type generateRunLLMMutationHookResult = ReturnType<typeof usegenerateRunLLMMutation>;
 export type generateRunLLMMutationResult = Apollo.MutationResult<generateRunLLMMutation>;
 export type generateRunLLMMutationOptions = Apollo.BaseMutationOptions<generateRunLLMMutation, generateRunLLMMutationVariables>;
+export const businessEmployeesDocument = gql`
+    query businessEmployees($businessId: String!) {
+  businessEmployees(businessId: $businessId) {
+    ...BusinessEmployee
+  }
+}
+    ${BusinessEmployeeFragmentDoc}`;
+
+/**
+ * __usebusinessEmployeesQuery__
+ *
+ * To run a query within a React component, call `usebusinessEmployeesQuery` and pass it any options that fit your needs.
+ * When your component renders, `usebusinessEmployeesQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = usebusinessEmployeesQuery({
+ *   variables: {
+ *      businessId: // value for 'businessId'
+ *   },
+ * });
+ */
+export function usebusinessEmployeesQuery(baseOptions: Apollo.QueryHookOptions<businessEmployeesQuery, businessEmployeesQueryVariables> & ({ variables: businessEmployeesQueryVariables; skip?: boolean; } | { skip: boolean; }) ) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<businessEmployeesQuery, businessEmployeesQueryVariables>(businessEmployeesDocument, options);
+      }
+export function usebusinessEmployeesLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<businessEmployeesQuery, businessEmployeesQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<businessEmployeesQuery, businessEmployeesQueryVariables>(businessEmployeesDocument, options);
+        }
+export function usebusinessEmployeesSuspenseQuery(baseOptions?: Apollo.SkipToken | Apollo.SuspenseQueryHookOptions<businessEmployeesQuery, businessEmployeesQueryVariables>) {
+          const options = baseOptions === Apollo.skipToken ? baseOptions : {...defaultOptions, ...baseOptions}
+          return Apollo.useSuspenseQuery<businessEmployeesQuery, businessEmployeesQueryVariables>(businessEmployeesDocument, options);
+        }
+export type businessEmployeesQueryHookResult = ReturnType<typeof usebusinessEmployeesQuery>;
+export type businessEmployeesLazyQueryHookResult = ReturnType<typeof usebusinessEmployeesLazyQuery>;
+export type businessEmployeesSuspenseQueryHookResult = ReturnType<typeof usebusinessEmployeesSuspenseQuery>;
+export type businessEmployeesQueryResult = Apollo.QueryResult<businessEmployeesQuery, businessEmployeesQueryVariables>;

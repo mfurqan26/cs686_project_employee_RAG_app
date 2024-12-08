@@ -27,3 +27,15 @@ export function getEmployeeSuggestionOutputSchema() {
     }),
   );
 }
+
+export function getEmployeeSuggestionOutputSchemaForLevel() {
+  return StructuredOutputParser.fromZodSchema(
+    z.object({
+      selectedNocCodes: z
+        .array(z.string().describe(`NOC code selected for the business`))
+        .describe(
+          `List of NOCs (National Occupational Classification) codes for the business to hire`,
+        ),
+    }),
+  );
+}
